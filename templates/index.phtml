@@ -35,9 +35,12 @@
     </div>
 </nav>
 
-<form>
+<form action="/" method="post">
     <label for="exampleDataList" class="form-label">Бесплатно проверяйте сайты на SEO пригодность</label>
-    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="https://forexample.ru">
+    <input class="form-control" list="datalistOptions" id="exampleDataList" type="text" name="url[name]" placeholder="https://forexample.ru">
+    <?php if (isset($errors)): ?>
+        <div style="color: red"><?= $errors ?></div>
+    <?php endif ?>
 
 
     <button type="submit" class="btn btn-primary">ПРОВЕРИТЬ</button>

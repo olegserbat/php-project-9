@@ -3,7 +3,7 @@
     "description": "The third project",
     "autoload": {
         "psr-4": {
-            "Oleg\\PhpProject9\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -19,9 +19,12 @@
         "php-di/php-di": "^7.0",
         "slim/flash": "^0.4.0",
         "twbs/bootstrap": "5.3.3",
-        "slim/twig-view": "^3.4"
+        "slim/twig-view": "^3.4",
+        "nesbot/carbon": "^3.8",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "3.*"
+        "squizlabs/php_codesniffer": "3.*",
+        "symfony/var-dumper": "^7.1"
     }
 }

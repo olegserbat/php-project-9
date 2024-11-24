@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Универсальные кабельные крепления ImEL UCC</title>
+<meta name="keywords" content="кабельные крепления, кабель, перспектива-2а">
+<meta name="description" content="Универсальные кабельные крепления ImEL UCC">
+<link href="default.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body style="background-attachment: fixed">
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40475625 = new Ya.Metrika({ id:40475625, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40475625" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<div id="header">
+  <div id="logo">
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">
+    &nbsp;</div>
+  <div id="splash">
+    <p align="center">
+    <img border="0" src="images/shapka1.jpg" width="720" height="200"></div>
+</div>
+
+<div id="content">
+  <div id="sidebar">
+    <div id="menu">
+      <ul>
+        <li   class="active first"><a href="index.html">
+        <span style="background-position: 0% 0%" lang="ru">На главную</span></a></li>
+        <li><a href="about.html"><span lang="ru">О компании</span></a></li>
+        <li><a href="marka.html"><span lang="ru">Маркировка и размеры</span></a></li>
+        <li><a href="product.html"><span lang="ru">Продукция</span></a>
+        <ul class="new_li">
+        <li><a href="cable/product.html">- кабельная продукция</a></li>
+    <li><a href="niedax/niedax.html">- NIEDAX GROUP</a></li>
+        <li><a href="ebo/ebo.html">- EBO SYSTEMS</a></li>
+        <li><a href="mounting/product.html">- для крепления кабелей</a></li>
+        <li><a href="coupling/product.html">- муфты и инструмент</a></li>
+        <li><a href="thermon/thermon.html">- промышленный обогрев Thermon</a></li>
+        </ul></li>
+        <li><a href="raschet.html"><span lang="ru">Шаг установки и нагрузки</span></a></li>
+        <li><a href="montag.html"><span lang="ru">Монтаж</span></a></li>
+        <li><a href="contakt.html"><span lang="ru">Контакты</span></a></li>
+      </ul>
+      <div class="content">
+        <form id="form1" method="post" action="#">
+          <p>&nbsp;</p>
+        </form></div></div>
+    <!--<div id="updates" class="boxed">
+      <h2 class="title"><font color="#000000"><span lang="ru">Новости</span></font></h2>
+      <div class="content">
+        &nbsp;</div></div>--></div>
+  <div id="main">
+    <div id="welcome" class="post">
+      <p align="justify">ООО «Перспектива-2А» - динамично развивающаяся компания 
+      является официальным дилером кабельных компаний <span lang="en-us">
+      <b>Ericsson Cables</b> </span>и <span lang="en-us"><b>Hellenic Cables</b> -
+      </span>мировых<span lang="en-us"> </span>лидеров по производству 
+      кабельной продукции<span lang="en-us">. </span> </p>
+      <p align="justify">&nbsp;</p>
+      <p align="justify">Также наша компания занимается разработкой, производством и внедрением новых видов крепежа для 
+кабелей среднего и высокого классов напряжения. </p>
+      <h3 class="title">&nbsp;</h3>
+      <h3 class="title">Универсальные кабельные крепления для одиночной и 
+      групповой прокладки марки ImEl UCC
+      ТУ 4834-001-746513568-2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h3>
+      <p align="center">
+      &nbsp;
+      </p>
+      <p align="center">
+      <!--<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="656" height="352">
+        <param name="movie" value="images/DutchclampTо.swf">
+        <param name="quality" value="High">
+        <embed src="images/DutchclampTо.gif" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="656" height="352" quality="High"></object>-->
+      <img border="0" src="images/kr.jpg" width="300" height="180" style="margin-left: 10px; margin-right: 10px" align="right">
+	  </p>
+      <p>&nbsp;</p>
+      <p>Универсальные кабельные крепления марки <font color="#FF9933"><b>ImEl UCC</b></font>, 
+        представляющие собой узел из изоляционных элементов, 
+        обеспечивающий крепление кабелей к несущим конструкциям. 
+        Кабельные крепления <b><font color="#FF9933">ImEl UCC</font></b> обеспечивают надежную фиксацию, как 
+        одножильных, так и многожильных кабелей различных классов 
+        напряжения при горизонтальной, наклонной или вертикальной 
+        прокладке. </p>
+      <p>&nbsp;</p>
+      <p>
+      <h3>Область применения:</h3>внутри помещений или на открытом воздухе, 
+        а так же во взрывоопасных зонах всех классов и атомных станциях.<p>&nbsp;</p>
+      </p>
+      <p>
+      <h3>Конструкция:</h3>кабельные крепления <font color="#FF9933"><b>ImEl UCC</b></font> состоят из 
+        двух частей: основания и фиксатора. Основание и фиксатор имеют 
+        сложную повторяющуюся форму, при монтаже фиксатор «охватывает» 
+        основу, что придает креплению дополнительную прочность при 
+        нагрузках в горизонтальной плоскости. Элементы крепления марки 
+        <b><font color="#FF9933">ImEl UCC</font></b> изготавливаются методом литья под давлением из 
+        композиции из <font color="#FF9933"><b>полиамида</b></font>.
+      </p>
+      <p class="title">&nbsp;</p>
+      <h3 class="date"><font color="#FF9933"><span class="month">
+      <span lang="ru">Внимание!</span></span></font></h3>
+      <div class="meta">
+        <p><b><font color="#FF9933">Полиамид</font></b><font color="#FF9933"> - 
+        </font><font color="#000000"><b>высокомолекулярные соединения, содержащие в основной цепи 
+        макромолекулы, </b></font></p>
+        <p><font color="#000000"><b>повторяющиеся амидные группы —C(O)—NH—. Материал 
+        имеет отличную </b></font></p>
+        <p><font color="#000000"><b>масло-бензостойкость и стойкость </b>
+        </font><b><font color="#000000">к углеводородным продуктам, отличные механические свойства.</font></b></p>
+      </div>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+      <h3>Модификация полиамида путем усиления его стекловолокном 
+          позволяет существенно изменить свойства базового материала, 
+          придать композициям на основе полиамида:</h3>
+      <p>&nbsp;</p>
+      <ul>
+        <li>более высокую теплостойкость;</li>
+        <li>повысить его жесткость и прочность;</li>
+        <li>повысить стойкость материала к воздействию 
+            атмосферных факторов;</li>
+        <li>придать материалу свойства негорючести;</li>
+        <li>снизить влагопоглощение и т.д.</li>
+      </ul>
+      <p>
+      <h3>&nbsp;</h3>
+      <h3>Эксплуатационные характеристики креплений <font color="#FF9933">ImEl UCC</font>:</h3>
+      <p>&nbsp;</p></p>
+      <ul>
+        <li>диапазон температур эксплуатации от – 60 С до + 120 
+            С;</li>
+        <li>не распространяет горение (группа FV (ПВ)0 по ГОСТ 
+            28779-90);</li>
+        <li>стойкость к озону и ультрафиолету;</li>
+        <li>стойкость к воздействию атмосферных осадков;</li>
+        <li>стойкость к радиации;</li>
+        <li>стойкость к воздействию продуктов нефтепереработки.</li>
+      </ul>
+      <p>
+            <h3>&nbsp;</h3>
+      <h3>Гарантийный срок эксплуатации - 5 лет.</h3><br>Гарантийный срок эксплуатации исчисляют с даты проведения 
+          монтажа креплений.<br>Срок службы узла крепления кабелей не менее 30 лет при 
+          соблюдении потребителем условий транспортирования, хранения, 
+          монтажа эксплуатации, указанных в настоящих технических 
+          условиях. Срок службы исчисляют с даты ввода узла в 
+          эксплуатацию. Фактический срок службы узла крепления кабеля 
+          не ограничивается указанным сроком службы, а соответствует 
+          сроку службы кабельной линии.<p>&nbsp;</div></div>
+</div>
+<div id="footer">
+  <p id="legal" style="text-align: center"><b><font color="#000000">Copyright © 2021 Перспектива-2А</font></b></p>
+</div>
+</body>
+</html>
