@@ -48,14 +48,6 @@ $app->get('/', function ($request, $response)  {
     return $this->get('renderer')->render($response, 'index.phtml');
 })->setName('main');
 
-$app->get('/test', function ($request, $response)  {
-    $client = new Client();
-    $response = $client->get('https://impx.ru');
-    var_dump($response->getStatusCode(), $response->getBody()->getContents());
-    die();
-    return $this->get('renderer')->render($response, 'index.phtml');
-});
-
 
 $app->post('/', function ($request, $response)  {
     $url = $request->getParsedBodyParam('url');
@@ -109,11 +101,21 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
     $urlInform = $client->get($address);
     $statusCod = $urlInform->getStatusCode();
     $body = $urlInform->getBody();
-    file_put_contents('temprorary.txt', $body); die();
+    file_put_contents('temprorary.txt', $body);
+    preg_match("/(?<=<title>).+?(?=<\/title>)/", $body, $title);
+    $status = 'after check';
+    $urlChek = new \App\UrlCheck();
+    $urlChekData = ['description'=>'', 'h1'=>'', 'title'=>$title[0], 'status_code'=>$statusCod, 'url_id'=>$id];
+    $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
+    $repo = $this->get(\App\UrlCheckRepository::class);
+    $repo->save($urlChekObject);
+
+
+    var_dump($urlChekObject); die();
     $this->get('flash')->addMessage('success', 'Страница успешно проверена');
 
 
-    //$status = 'after check';
+
 
 
     $route = $router->urlFor('getUrlId', ['id' => $id], [ 'status'=>$status, 'id'=>$id]);
@@ -125,5 +127,13 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
     //return $response->withRedirect($this->router->urlFor('getUrlsId', [], $params));
     //return $this->get('renderer')->render($response, 'url.phtml', $params);
 });
+
+$app->get('/urls', function ($request, $response)  {
+
+
+    return $this->get('renderer')->render($response, 'urls.phtml');
+})->setName('urls');
+
+
 $app->run();
 

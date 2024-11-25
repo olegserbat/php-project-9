@@ -91,7 +91,7 @@ class UrlCheck
     public function makeUrlCheckObject ( array $urlCheck): UrlCheck
     {
         $url = new UrlCheck();
-        $url->setId($urlCheck['id']);
+        //$url->setId($urlCheck['id']);
         $url->setCreatedAt();
         $url->setDescription($urlCheck['description']);
         $url->setH1($urlCheck['h1']);
