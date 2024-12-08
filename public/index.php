@@ -8,8 +8,10 @@ use DI\Container;
 use DiDom\Document;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ServerException;
+use GuzzleHttp\Exception\TooManyRedirectsException;
 use Slim\Factory\AppFactory;
 use Slim\Flash\Messages;
 use Slim\Middleware\MethodOverrideMiddleware;
@@ -26,11 +28,25 @@ $container->set('flash', function () {
 });
 
 $container->set(\PDO::class, function () {
-    $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
-    $user = 'oleg';
-    $password = '';
-    $conn = new \PDO($dsn, $user, $password);
-    $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+
+    if(empty($_ENV['DATABASE_URL'])) {
+        $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
+        $user = 'oleg';
+        $password = '';
+        $conn = new \PDO($dsn, $user, $password);
+        $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+    } else {
+        $databaseUrl = parse_url($_ENV['DATABASE_URL']);
+        $username = $databaseUrl['user']; // janedoe
+        $password = $databaseUrl['pass']; // mypassword
+        $host = $databaseUrl['host']; // localhost
+        $port = $databaseUrl['port']; // 5432
+        $dbName = ltrim($databaseUrl['path'], '/'); // mydb
+        $dsn = sprintf("pgsql:dbname=%s;host=%s", $dbName, $host);
+        $conn = new \PDO($dsn, $username, $password);
+        $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+    }
+
     return $conn;
 });
 
@@ -114,7 +130,7 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
     $client = new Client();
     try {
 
-        $urlInform = $client->request('GET', $address, ['allow_redirects' => false, 'http_errors' => false]);
+        $urlInform = $client->request('GET', $address, ['allow_redirects' => true, 'http_errors' => true]);
         //$urlInform = $client->request ( 'GET' ,  $address );
         //$urlInform = $client->get($address);
         $statusCod = $urlInform->getStatusCode();
@@ -152,23 +168,31 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         $status = 'after check';
         $urlChek = new \App\UrlCheck();
         $urlChekData = ['description' => $description, 'h1' => $h1, 'title' => $title, 'status_code' => $statusCod, 'url_id' => $id];
-        $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
+        $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
 
     } catch (ClientException $e) {
         $response2 = $e->getMessage();
-        var_dump($response2);
+        var_dump('client',$response2);
         die();
     } catch (ServerException $e) {
         $response2 = $e->getMessage();
-        var_dump($response2);
+        var_dump('server', $response2, $e);
+        die();
+    } catch (TooManyRedirectsException $e) {
+        var_dump('too many redirect',$e->getCode());
+        die();
+    } catch (ConnectException $e ) {
+        var_dump('connect',$e);
         die();
     } catch (RequestException $e) {
         $response2 = $e->getMessage();
-        var_dump($response2);
+        var_dump('request',$response2, $e);
         die();
-    } catch (\Throwable $e) {
+    }
+    catch (\Throwable $e) {
+        var_dump($e);die();
         $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
         return $response->withRedirect("/urls/$id");
     }

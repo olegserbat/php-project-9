@@ -1,1034 +1,157 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="robots" content="index, follow" />
-<meta name="keywords" content="веб-студия, сайт, корпоративный сайт, интеграция, 1С, битрикс, юми" />
-<meta name="description" content="Веб-студия Пугофка предлагает взвешенные решения для вашего бизнеса от корпоративного сайта, до интернет-магазина с интеграцией" />
-<style type="text/css">.bx-composite-btn {background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;border-radius: 15px;color: #fff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url(/bitrix/images/main/composite/sprite-2x.png);background-size: 42px 124px;}}.bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}.bx-btn-white {background-position: right 0;color: #fff !important;}.bx-btn-black {background-position: right -31px;color: #000 !important;}.bx-btn-red {background-position: right -62px;color: #555 !important;}.bx-btn-grey {background-position: right -93px;color: #657b89 !important;}.bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}.bx-composite-loading {display: block;width: 40px;height: 40px;background: url(/bitrix/images/main/composite/loading.gif);}</style>
-<script data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {"CACHE_MODE":"HTMLCACHE","banner":{"url":"https:\/\/www.1c-bitrix.ru\/composite\/","text":"Быстро с 1С-Битрикс","bgcolor":"#eb4523","style":"white"},"storageBlocks":[],"dynamicBlocks":[],"AUTO_UPDATE":true,"AUTO_UPDATE_TTL":0,"version":2};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);</script>
-<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Windows/i.test(ua)){cl += ' bx-win';}else if (/Macintosh/i.test(ua)){cl += " bx-mac";}else if (/Linux/i.test(ua) && !/Android/i.test(ua)){cl += " bx-linux";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Firefox/.test(ua)){cl += " bx-firefox";}ht.className = htc ? htc + " " + cl : cl;})(window, document, navigator);</script>
-
-
-<link href="/bitrix/cache/css/s1/blog_2015/page_9c98f042176eb33669cdd0ca1e1891f1/page_9c98f042176eb33669cdd0ca1e1891f1_v1.css?1723557708193032" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/cache/css/s1/blog_2015/template_ce93bbafba9a55abf67f88ad1e6cfa0f/template_ce93bbafba9a55abf67f88ad1e6cfa0f_v1.css?1723557570152102" type="text/css"  data-template-style="true" rel="stylesheet" />
-
-
-
-
-
-
-
-                <title>PUGOFKA — веб-разработка и дизайн</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" sizes="57x57" href="/local/favicon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/local/favicon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/local/favicon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/local/favicon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/local/favicon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/local/favicon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/local/favicon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/local/favicon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/local/favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/local/favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/local/favicon/favicon-194x194.png" sizes="194x194">
-        <link rel="icon" type="image/png" href="/local/favicon/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/local/favicon/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="/local/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/local/favicon/manifest.json">
-        <link rel="mask-icon" href="/local/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/local/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/local/favicon/mstile-144x144.png">
-        <meta name="msapplication-config" content="/local/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-                     </head>
-<body>
-    <div id="panel">
-            </div>
-    <!-- Yandex.Metrika counter -->
-<noscript><div><img src="//mc.yandex.ru/watch/189795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->    <header class="l-header">
-        <div class="container">
-            <div class="row m-navbar">
-                <div class="col-sm-4 col-xs-4 col-md-3">
-                    <a class="logo" href="/"><img src="/local/templates/blog_2015/css/img/logo.png" alt=""></a>
-                </div>
-                <div class="col-md-5 col-sm-8 col-xs-8">
-                    <nav class="navbar navbar-default main_menu" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Меню</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-                        
-<menu class="nav navbar-nav">
-	<li><a href="/cases/">Кейсы</a></li>
-	<li><a href="/blog/">Блог</a></li>
-	<li><a href="/about/">О нас</a></li>
-</menu>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-md-4 hidden-sm hidden-xs">
-                    <span class="tel">+7 (812) 425-64-08</span>
-<script id="bx24_form_button" data-skip-moving="true">
-        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
-               (w[b].forms=w[b].forms||[]).push(arguments[0])};
-               if(w[b]['forms']) return;
-               s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
-               h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-       })(window,document,'https://pugofka.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
-
-       b24form({"id":"12","lang":"ru","sec":"1o0mkp","type":"button","click":""});
-</script><button class="b24-web-form-popup-btn-12 btn-danger header_feedback">Написать нам</button>
-                                    </div>
-            </div>
-        </div>
-    </header>
-    <main>
-                        <div class="container">
-                </div></main>    <section class="main_banner">
-        <div class="container">
-			<div class="row m-banner">
-	<div class="col-md-12 c-nopad">
-		<div class="rev_slider_wrapper" style="width:100%">
-			<div id="slider1" data-version="5.0">
-				<ul>
-									 <li
-						data-transition="incube"
-						data-link="/cases/akmr/"
-						data-target="_self"><img src="/upload/rk/57f/akmr_case_cover.png" alt="AKMR"></li>
-									 <li
-						data-transition="incube"
-						data-link="/cases/questor/"
-						data-target="_self"><img src="/upload/rk/b79/questor_cover.png" alt="Questor"></li>
-									 <li
-						data-transition="incube"
-						data-link="/54fz/"
-						data-target="_blank"><img src="/upload/rk/ce0/54_fz_2.png" alt=""></li>
-									 <li
-						data-transition="incube"
-						data-link="/translation-of-a-website-to-https/"
-						data-target="_blank"><img src="/upload/rk/e9e/https_2.png" alt=""></li>
-									 <li
-						data-transition="incube"
-						data-link="/cases/artsteklov/"
-						data-target="_self"><img src="/upload/rk/404/artsteklov_preview_case-_1_.png" alt="3D-Art Steklov"></li>
-								</ul>
-			</div>
-		</div>
-	</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Универсальные кабельные крепления ImEL UCC</title>
+<meta name="keywords" content="кабельные крепления, кабель, перспектива-2а">
+<meta name="description" content="Универсальные кабельные крепления ImEL UCC">
+<link href="default.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body style="background-attachment: fixed">
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40475625 = new Ya.Metrika({ id:40475625, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40475625" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<div id="header">
+  <div id="logo">
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">
+    &nbsp;</div>
+  <div id="splash">
+    <p align="center">
+    <img border="0" src="images/shapka1.jpg" width="720" height="200"></div>
 </div>
-			<div class="row">
-	<div class="col-md-12">
-		<div class="rev_slider_wrapper" style="width:100%">
-			<div id="slider2" data-version="5.0">
-				<ul>
-									<li
-						data-transition="cube">
-						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#9ec12f" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-						<div
-							class="tp-caption tp-resizeme rs-parallaxlevel-2"
-							data-x="['center','center','center','center']"
-							data-y="['middle','middle','middle','middle']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-							data-start="100"
-							data-splitin="none"
-							data-splitout="none"
-							data-responsive_offset="on"
-							style="z-index: 6; white-space: nowrap;font-style:italic;"><span class="underline">14 из 15</span><p><strong>клиентов</strong> <br /> рекомендуют нас</p>						</div>
-					</li>
-									<li
-						data-transition="cube">
-						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#1a9de0" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-						<div
-							class="tp-caption tp-resizeme rs-parallaxlevel-2"
-							data-x="['center','center','center','center']"
-							data-y="['middle','middle','middle','middle']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-							data-start="100"
-							data-splitin="none"
-							data-splitout="none"
-							data-responsive_offset="on"
-							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Сделали</p><span class="underline">>170</span><p>проектов</p>						</div>
-					</li>
-									<li
-						data-transition="cube">
-						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#e84ba5" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-						<div
-							class="tp-caption tp-resizeme rs-parallaxlevel-2"
-							data-x="['center','center','center','center']"
-							data-y="['middle','middle','middle','middle']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-							data-start="100"
-							data-splitin="none"
-							data-splitout="none"
-							data-responsive_offset="on"
-							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Средняя скорость <br/>работы наших сайтов</p><span class="underline">< 0.7</span><p><strong>секунды</strong></p>						</div>
-					</li>
-									<li
-						data-transition="cube">
-						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#fcbd15" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-						<div
-							class="tp-caption tp-resizeme rs-parallaxlevel-2"
-							data-x="['center','center','center','center']"
-							data-y="['middle','middle','middle','middle']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-							data-start="100"
-							data-splitin="none"
-							data-splitout="none"
-							data-responsive_offset="on"
-							style="z-index: 6; white-space: nowrap;font-style:italic;"><span class="underline">19 из 20</span><p><strong>клиентов</strong> <br /> работают с нами более года</p>						</div>
-					</li>
-									<li
-						data-transition="cube">
-						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#fcbd15" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-						<div
-							class="tp-caption tp-resizeme rs-parallaxlevel-2"
-							data-x="['center','center','center','center']"
-							data-y="['middle','middle','middle','middle']"
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap"
-							data-transform_idle="o:1;"
-							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-							data-start="100"
-							data-splitin="none"
-							data-splitout="none"
-							data-responsive_offset="on"
-							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Наш опыт:</p><span class="underline">5+</span><p><strong>лет</strong> <br /> на рынке</p>						</div>
-					</li>
-								</ul>
-			</div>
-		</div>
-	</div>
+
+<div id="content">
+  <div id="sidebar">
+    <div id="menu">
+      <ul>
+        <li   class="active first"><a href="index.html">
+        <span style="background-position: 0% 0%" lang="ru">На главную</span></a></li>
+        <li><a href="about.html"><span lang="ru">О компании</span></a></li>
+        <li><a href="marka.html"><span lang="ru">Маркировка и размеры</span></a></li>
+        <li><a href="product.html"><span lang="ru">Продукция</span></a>
+        <ul class="new_li">
+        <li><a href="cable/product.html">- кабельная продукция</a></li>
+    <li><a href="niedax/niedax.html">- NIEDAX GROUP</a></li>
+        <li><a href="ebo/ebo.html">- EBO SYSTEMS</a></li>
+        <li><a href="mounting/product.html">- для крепления кабелей</a></li>
+        <li><a href="coupling/product.html">- муфты и инструмент</a></li>
+        <li><a href="thermon/thermon.html">- промышленный обогрев Thermon</a></li>
+        </ul></li>
+        <li><a href="raschet.html"><span lang="ru">Шаг установки и нагрузки</span></a></li>
+        <li><a href="montag.html"><span lang="ru">Монтаж</span></a></li>
+        <li><a href="contakt.html"><span lang="ru">Контакты</span></a></li>
+      </ul>
+      <div class="content">
+        <form id="form1" method="post" action="#">
+          <p>&nbsp;</p>
+        </form></div></div>
+    <!--<div id="updates" class="boxed">
+      <h2 class="title"><font color="#000000"><span lang="ru">Новости</span></font></h2>
+      <div class="content">
+        &nbsp;</div></div>--></div>
+  <div id="main">
+    <div id="welcome" class="post">
+      <p align="justify">ООО «Перспектива-2А» - динамично развивающаяся компания 
+      является официальным дилером кабельных компаний <span lang="en-us">
+      <b>Ericsson Cables</b> </span>и <span lang="en-us"><b>Hellenic Cables</b> -
+      </span>мировых<span lang="en-us"> </span>лидеров по производству 
+      кабельной продукции<span lang="en-us">. </span> </p>
+      <p align="justify">&nbsp;</p>
+      <p align="justify">Также наша компания занимается разработкой, производством и внедрением новых видов крепежа для 
+кабелей среднего и высокого классов напряжения. </p>
+      <h3 class="title">&nbsp;</h3>
+      <h3 class="title">Универсальные кабельные крепления для одиночной и 
+      групповой прокладки марки ImEl UCC
+      ТУ 4834-001-746513568-2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h3>
+      <p align="center">
+      &nbsp;
+      </p>
+      <p align="center">
+      <!--<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="656" height="352">
+        <param name="movie" value="images/DutchclampTо.swf">
+        <param name="quality" value="High">
+        <embed src="images/DutchclampTо.gif" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="656" height="352" quality="High"></object>-->
+      <img border="0" src="images/kr.jpg" width="300" height="180" style="margin-left: 10px; margin-right: 10px" align="right">
+	  </p>
+      <p>&nbsp;</p>
+      <p>Универсальные кабельные крепления марки <font color="#FF9933"><b>ImEl UCC</b></font>, 
+        представляющие собой узел из изоляционных элементов, 
+        обеспечивающий крепление кабелей к несущим конструкциям. 
+        Кабельные крепления <b><font color="#FF9933">ImEl UCC</font></b> обеспечивают надежную фиксацию, как 
+        одножильных, так и многожильных кабелей различных классов 
+        напряжения при горизонтальной, наклонной или вертикальной 
+        прокладке. </p>
+      <p>&nbsp;</p>
+      <p>
+      <h3>Область применения:</h3>внутри помещений или на открытом воздухе, 
+        а так же во взрывоопасных зонах всех классов и атомных станциях.<p>&nbsp;</p>
+      </p>
+      <p>
+      <h3>Конструкция:</h3>кабельные крепления <font color="#FF9933"><b>ImEl UCC</b></font> состоят из 
+        двух частей: основания и фиксатора. Основание и фиксатор имеют 
+        сложную повторяющуюся форму, при монтаже фиксатор «охватывает» 
+        основу, что придает креплению дополнительную прочность при 
+        нагрузках в горизонтальной плоскости. Элементы крепления марки 
+        <b><font color="#FF9933">ImEl UCC</font></b> изготавливаются методом литья под давлением из 
+        композиции из <font color="#FF9933"><b>полиамида</b></font>.
+      </p>
+      <p class="title">&nbsp;</p>
+      <h3 class="date"><font color="#FF9933"><span class="month">
+      <span lang="ru">Внимание!</span></span></font></h3>
+      <div class="meta">
+        <p><b><font color="#FF9933">Полиамид</font></b><font color="#FF9933"> - 
+        </font><font color="#000000"><b>высокомолекулярные соединения, содержащие в основной цепи 
+        макромолекулы, </b></font></p>
+        <p><font color="#000000"><b>повторяющиеся амидные группы —C(O)—NH—. Материал 
+        имеет отличную </b></font></p>
+        <p><font color="#000000"><b>масло-бензостойкость и стойкость </b>
+        </font><b><font color="#000000">к углеводородным продуктам, отличные механические свойства.</font></b></p>
+      </div>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+      <h3>Модификация полиамида путем усиления его стекловолокном 
+          позволяет существенно изменить свойства базового материала, 
+          придать композициям на основе полиамида:</h3>
+      <p>&nbsp;</p>
+      <ul>
+        <li>более высокую теплостойкость;</li>
+        <li>повысить его жесткость и прочность;</li>
+        <li>повысить стойкость материала к воздействию 
+            атмосферных факторов;</li>
+        <li>придать материалу свойства негорючести;</li>
+        <li>снизить влагопоглощение и т.д.</li>
+      </ul>
+      <p>
+      <h3>&nbsp;</h3>
+      <h3>Эксплуатационные характеристики креплений <font color="#FF9933">ImEl UCC</font>:</h3>
+      <p>&nbsp;</p></p>
+      <ul>
+        <li>диапазон температур эксплуатации от – 60 С до + 120 
+            С;</li>
+        <li>не распространяет горение (группа FV (ПВ)0 по ГОСТ 
+            28779-90);</li>
+        <li>стойкость к озону и ультрафиолету;</li>
+        <li>стойкость к воздействию атмосферных осадков;</li>
+        <li>стойкость к радиации;</li>
+        <li>стойкость к воздействию продуктов нефтепереработки.</li>
+      </ul>
+      <p>
+            <h3>&nbsp;</h3>
+      <h3>Гарантийный срок эксплуатации - 5 лет.</h3><br>Гарантийный срок эксплуатации исчисляют с даты проведения 
+          монтажа креплений.<br>Срок службы узла крепления кабелей не менее 30 лет при 
+          соблюдении потребителем условий транспортирования, хранения, 
+          монтажа эксплуатации, указанных в настоящих технических 
+          условиях. Срок службы исчисляют с даты ввода узла в 
+          эксплуатацию. Фактический срок службы узла крепления кабеля 
+          не ограничивается указанным сроком службы, а соответствует 
+          сроку службы кабельной линии.<p>&nbsp;</div></div>
 </div>
-			
-        </div>
-    </section>
-    <section class="l-services">
-        <div class="container">
-            <div class="row m-services" id="services">
-                <div class="col-md-6 c-nopad-left js-mouseover">
-                    <div class="services-box orange">
-                        <div class="small">
-                            <div style="height: 300px"><img src="/local/templates/blog_2015/img/Tree.png" height="263" width="189" alt=""></div>
-                            <h2 class="underline">Мне нужен новый сайт</h2>
-                            <p>Мы создаем, обслуживаем и помогаем развивать сайты любой сложности.</p>
-                            <a href="javascript:void(0);" class="btn-more">посмотреть предложения</a>
-                        </div>
-                        <div class="full">
-                            <i class="close-btn"></i>
-                            <h2>Мне нужен сайт</h2>
-                            <ul class="nav nav-tabs responsive-tabs">
-                                <li class="active"><a href="#serveces">Сайт товара или услуги</a></li>
-                                <li><a href="#companysite">Сайт компании</a></li>
-                                <li><a href="#shop">Интернет-магазин</a></li>
-                                <li><a href="#corp">Корпоративные порталы</a></li>
-                                <li><a href="#portal">Портал, сервис</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane active row" id="serveces">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Планируя рекламную компанию, учитывайте, что конверсия значительно увеличивается, если вы направляете вашего пользователя на специально созданную страницу. Такие страницы называются «посадочными» (landing page).<br />
-                                    Идеально подходят для увеличения продаж отдельных товаров или услуг.</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Оптимальный</h3>
-                                                <ul>
-                                                    <li>Ни одна заявка не потеряется — интеграция с CRM</li>
-                                                    <li>Подбираем оптимальное решение</li>
-                                                    <li>Выжимаем максимум конверсии</li>
-                                                    <li>Интегрируем в единую экосистему</li>
-                                                </ul>
-                                                <div class="order-block-date">от 1 недели</div>
-                                                <div class="order-block-price">от <strong>30 т. р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="companysite">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Работая с нами, Вы получите высокий результат и принципиально качественный продукт. Каждый вложенный Вами рубль будет работать на Вас.</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-4 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Старт</h3>
-                                                <ul>
-                                                    <li>Коробка</li>
-                                                    <li>Быстро</li>
-                                                    <li>Дешево</li>
-                                                    <li>Шаблон</li>
-                                                </ul>
-                                                <div class="order-block-date">от 3-х недель</div>
-                                                <div class="order-block-price">от <strong>20</strong> до <strong>50 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12 col-xs-12">
-                                            <div class="order-block-box active">
-                                                <h3 class="underline">Оптимальный</h3>
-                                                <ul>
-                                                    <li>Уникальный дизайн</li>
-                                                    <li>Наладим обратную связь с клиентом</li>
-                                                </ul>
-                                                <div class="order-block-date">от 2-х недель</div>
-                                                <div class="order-block-price">от <strong>70</strong> до <strong>250 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Большой бизнес</h3>
-                                                <ul>
-                                                    <li>Автоматизируем сложные процессы</li>
-                                                    <li>Просто о сложном</li>
-                                                    <li>Запускаем инструменты продаж</li>
-                                                </ul>
-                                                <div class="order-block-date">от 2-х месяцев</div>
-                                                <div class="order-block-price">от <strong>300 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="shop">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Клиенты приходят к нам с опасениями, что запустить интернет-магазин сложно и дорого. Часто, для запуска подходит базовый функционал 1С-Битрикс. В этом случае запустить продажи в интернет-магазине можно уже через неделю, в дальнейшем развивая сайт. <br />
-                                        Если вам необходим уникальный продукт с нестандартным функционалом, мы предложим лучшее решение. </br >
-                                        Мы даём гарантию на работу. Даже нестандартные, персонализированные сайты мы делаем так, чтобы обновление Битрикса проходило безболезненно, чтобы новинки внедрялись легко. Каждый созданный нами проект проходит монитор качества 1С-Битрикс.</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Старт</h3>
-                                                <ul>
-                                                    <li>Коробочное решение</li>
-                                                    <li>Быстрый старт (от 3-х дней до запуска сайта)</li>
-                                                </ul>
-                                                <div class="order-block-date">Гарантия 1 месяц (только на наши работы)</div>
-                                                <div class="order-block-price">от <strong>60</strong> до <strong>150 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Малый бизнес</h3>
-                                                <ul>
-                                                    <li>Уникальный дизайн</li>
-                                                    <li>Базовый стандартный набор функционала</li>
-                                                    <li>Запуск менее чем за 1 месяц</li>
-                                                </ul>
-                                                <div class="order-block-date">Гарантия 6 месяцев</div>
-                                                <div class="order-block-price">от <strong>100</strong> до <strong>400 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Оптимальный</h3>
-                                                <ul>
-                                                    <li>Проработка стратегии (UX, маркетинговая)</li>
-                                                    <li>«Под ключ» — все заботы берем на себя</li>
-                                                    <li>Запускаем продажи на всю катушку: подключаем максимум инструментов для ваших продаж</li>
-                                                    <li>Полный "адаптоз" - расширенная поддержка мобильных устройств</li>
-                                                    <li>Подключение на сайт оплаты банковскими картами (онлайн платежи)</li>
-                                                    <li>Интеграция со сторонними системами (1С, SAP и другие)</li>
-                                                    <li>Подключаем технологии «Композитный сайт», персонализация и другие интересные возможности</li>
-                                                    <li>Наполнение контентом берем на себя</li>
-                                                    <li>1 месяц сопровождения в подарок</li>
-                                                    <li>Запуск от 2,5 месяцев</li>
-                                                </ul>
-                                                <div class="order-block-date">Гарантия 1 год</div>
-                                                <div class="order-block-price">от <strong>300</strong> до <strong>800 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Федеральный уровень</h3>
-                                                <ul>
-                                                    <li>Для действительно крупных проектов</li>
-                                                    <li>Сложные интеграции</li>
-                                                    <li>Максимальная забота о ваших клиентах</li>
-                                                    <li>E-Mail маркетинг на полную катушку</li>
-                                                    <li>А/В тестирование</li>
-                                                    <li>Выжимаем конверсию</li>
-                                                    <li>Обеспечиваем бесперебойную отказоустойчивость 24х7</li>
-                                                </ul>
-                                                <div class="order-block-date">от 4-х месяцев</div>
-                                                <div class="order-block-price">от <strong>800 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="corp">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">В мегаполисах, на конкурентных рынках, невозможно выстроить высокие стандарты обслуживания клиентов без помощи специальных программ. Начните экономить свое время! <br />
-                                        Наши компетенции и опыт внедрения Битрикс24 поможет вам избавиться от рутины и автоматизировать бизнес-процессы.</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="portal">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Решаем сложные задачи. Разрабатываем мобильные приложения, интернет-сервисы, порталы «с нуля». Если вам нужен продукт, которого ещё нет на рынке, мы разработаем вместе с вами подробное техническое задание, создадим прототипы и воплотим в жизнь самые смелые идеи.</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Оптимальный</h3>
-                                                <ul>
-                                                    <li>Индивидуальная разработка</li>
-                                                    <li>Высокие нагрузки</li>
-                                                    <li>Максимальная автоматизация</li>
-                                                </ul>
-                                                <div class="order-block-date">от 2-х месяцев</div>
-                                                <div class="order-block-price">от <strong>600 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 c-nopad-right js-mouseover">
-                    <div class="services-box green">
-                        <div class="small">
-                            <div style="height: 300px"><img src="/local/templates/blog_2015/img/Skotch.png" height="237" width="250" alt="2"></div>
-                            <h2 class="underline">У меня уже есть сайт</h2>
-                            <p>Измерим пульс вашему сайту, оценим потенциал, найдем и устраним все ошибки, обсудим развитие и поддержку, увеличим продажи.</p>
-                            <a href="javascript:void(0);" class="btn-more">посмотреть предложения</a>
-                        </div>
-                        <div class="full">
-                            <i class="close-btn"></i>
-                            <h2>У меня уже есть сайт</h2>
-                            <ul class="nav nav-tabs responsive-tabs">
-                                <li class="active"><a href="#develop">Развиваем сайт</a></li>
-                                <li><a href="#increase-sales">Увеличиваем продажи</a></li>
-                                <li><a href="#increase-speed">Увеличиваем скорость работы</a></li>
-                                <li><a href="#repair">Исправляем ошибки</a></li>
-                                <li><a href="#audit">Аудит</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane row active" id="develop">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Развиваем сайт</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="increase-sales">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Увеличиваем продажи</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="increase-speed">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Увеличиваем скорость работы</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="repair">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9">Исправляем ошибки</p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane row" id="audit">
-                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
-                                    <p class="col-md-9"> Аудит </p>
-                                    <div class="clearfix"></div>
-                                    <div class="order-block row">
-                                        <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <div class="order-block-box">
-                                                <h3 class="underline">Аудит - измеряем пульс вашего сайта</h3>
-                                                <ul>
-                                                    <li>Функциональное / ручное тестирование</li>
-                                                    <li>Аудит юзабилити</li>
-                                                    <li>Аудит кода / производительсти (только для 1С-Битрикс)</li>
-                                                    <li>Анализ коммерческих факторов</li>
-                                                    <li>Даем общие рекомендации по развитию продукта</li>
-                                                    <li>Оформляем все в доступный и наглядный отчет</li>
-                                                </ul>
-                                                <div class="order-block-date">до 5 дней</div>
-                                                <div class="order-block-price"><strong>35 т.р.</strong></div>
-                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="service_header" tabindex="-1" role="dialog" aria-labelledby="service_headerLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content feedback_content">
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="close_btn"></i>
-                            </button>
-                            <div class="ajax-conteiner noDisplay"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<section style="padding-top: 50px; overflow-y: hidden;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 c-nopad">
-					<div class="rev_slider_wrapper" style="width:100%">
-						<!-- START REVOLUTION SLIDER 5.0 auto mode -->
-						<div id="slider_logo" data-version="5.0">
-							<ul>
-																	<li>
-										<img src="/upload/iblock/619/clovergroup.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/c8c/alfastrah.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/33c/velomart.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/1da/sharik.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/24e/ilike.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/41f/begemot.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/1e9/stronto.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/7b1/akvabook.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/9ea/hse.png" height="35" width="129" alt="1">
-									</li>
-																	<li>
-										<img src="/upload/iblock/c30/spa.png" height="35" width="129" alt="1">
-									</li>
-															</ul>
-						</div><!-- END REVOLUTION SLIDER -->
-					</div><!-- END REVOLUTION SLIDER WRAPPER -->
-					<div class="rev_slider_wrapper" style="width:100%">
-						<!-- START REVOLUTION SLIDER 5.0 auto mode -->
-						<div id="slider_review" data-version="5.0">
-						<div class="slider-triangle"></div>
-							<ul>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[50,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Работы были выполнены качественно и строго в заявленные сроки. Мы довольны результатом, но, что не менее важно, в процессе у нас не возникало никаких нареканий к действиям менеджеров и технических специалистов компании. Хотим поблагодарить коллектив за отличную работу.</p>
-																					<a href="/upload/iblock/ec0/otzyv_clovergroup.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Наринэ Фатыхова	</p>  <small>Руководитель Службы PR и рекламы</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[40,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Клиентоориентированный подход к работе, выполнение работ в оперативные сроки, профессионализм - это то, на чем строится вся работа в данной веб-студии. По мере поступления новых задач сотрудниками студии предлагались грамотные и интересные решения.</p>
-																					<a href="/upload/iblock/e18/alpha.png" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Арсен Даллакян</p>  <small>Руководитель управления маркетинга и развития Московского Регионального Центра ОАО &quot;АльфаСтрахование&quot;</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[0,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Только положительные впечатления! До этого работал с рядом фирм, из которых результат приходилось выбивать, и постоянно напоминать о договоренностях. С этими ребятами история<br />
-разительно отличается! Все сроки, договоренности и пожелания соблюдены, результатом работы очень доволен. По сравнению со старым сайтом конверсия резко увеличилась, продажи пошли, а заказы обрабатывать стало намного удобнее. Спасибо руководству и сотрудникам компании «Pugofka»!</p>
-																				<p class="underline">Дмитрий Белоусов</p>  <small></small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[20,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>По рекомендации обратились в компанию &quot;Пугофка&quot;. Ребята молодцы. Реализовали все что было задумано и проявили инициативу, в результате которой ряд функционала был оптимизирован, что положительно<br />
-повлияло на юзабилити и скорость работы сайта. Конверсия выросла, мы вошли во вкус. Будем продолжать совершенствоваться.</p>
-																					<a href="/upload/iblock/fd6/doc05218420151202115101.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Александра Гусева</p>  <small>Директор по развитию</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[10,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Нам было очень приятно сотрудничать с коллективом «Pugofka». Специалисты «Pugofka» моментально  поняли, что нам нужно и очень точно, стильно и творчески воплотили наши идеи. Весь процесс создания  сайта проходил очень гладко и в атмосфере полного взаимопонимания. А если и возникали какие-то вопросы,то сотрудники «Pugofka» быстро, четко и вежливо их решали. Спасибо им большое!</p>
-																				<p class="underline">Алена Юшкевич</p>  <small>Директор по обучению</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[0,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Студии &quot;Пугофка&quot; я хочу дать самый говорящий для руководителя любой компании отзыв: проект сдан, и я решительным образом не заметил, когда и как это произошло.<br />
-Оценка проекта была зафиксирована заранее и не менялась аж до самого завершения работы. Менеджеры ни разу не жаловались на срыв сроков или качества. <br />
-С полной уверенностью и радостью готов рекомендовать студию &quot;Пугофка&quot; для веб-разработки</p>
-																					<a href="/upload/iblock/914/rekomendatsiya_dlya_pugofka.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Андраш Густи</p>  <small>руководитель студии &quot;Бегемот-Бегемот&quot;</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[0,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>В результате работы появился сайт, соответствующий всем ожиданиям и договоренностям. И сроки, и стоимость все было соблюдено. А после сдачи проекта, продолжительное время обсуждали дальнейшее его развитие. Мною были получены ряд очень ценных рекомендаций и советов по развитию сайта.<br />
-Студию &quot;Пугофка&quot; можно смело рекомендовать друзьям. Никогда за работу этих ребят не придется краснеть</p>
-																					<a href="/upload/iblock/c47/otzyv_stronto.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Макаров С.Г.</p>  <small>Генеральный директор ООО &quot;Стронто&quot;</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[20,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Вот уже второй год мы сотрудничаем с ООО &quot;Пугофка&quot;. При работе над сайтом, иногда наше мнение не совпадало, но всегда четко и грамотно обосновывали предложенные технические решения, и именно эта принципиальность позволила избежать многих ошибок. <br />
-Спасибо за вашу отзывчивость и оптимизм</p>
-																					<a href="/upload/iblock/7a5/2015_10_22_pismo_1022_pugofka_blagodarnost.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">В.П. Петров</p>  <small>Управляющий партнер</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[80,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>Выражаем искреннюю благодарность и признательность за длительное сотрудничество, высокий профессиональный уровень и гибкий подход к решению наших задач</p>
-																					<a href="/upload/iblock/9d3/hse_review_1_.png" target="_blank" class="review-full">Читать отзыв целиком</a>
-																				<p class="underline">Светлана Смельцова</p>  <small>зам.декана Бизнес-школы НИУ ВШЭ Нижний Новгород</small>
-									</div>
-								</li>
-															<li data-transition="slidingoverlayhorizontal">
-																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-									<div
-										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										data-width="960"
-										data-height="414"
-										data-transform_idle="o:1;"
-										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
-										data-start="1000"
-										data-splitin="none"
-										data-splitout="none"
-										data-responsive_offset="on"
-										data-fontsize="['25','30','30','30']"
-										data-lineheight="['30','30','30','30']"
-										data-voffset="[3,30,30,30]"
-										style="z-index:6;color:white;">
-										<p>В студии «Pugofka» работает опытная команда, которая понимает как реализовывать сложные задачи. Проект Spadream.ru - это не просто интернет-магазин - это<br />
-целый комплекс оnlinе услуг в премиальном сегменте. Поставленные задачи для студии были весьма непросты и требовали понимания сферы деятельности нашей<br />
-компании. Как результат нашей работы‚ мы получили стильный, современный, удобный и в тоже время простой<br />
-интернет-магазин. Спустя две недели работы обновленного сайта мы получили рост конверсии на 2&#37;! </p>
-																				<p class="underline">Виктор Лупейко</p>  <small>Генеральный директор</small>
-									</div>
-								</li>
-														</ul>
-						</div><!-- END REVOLUTION SLIDER -->
-					</div><!-- END REVOLUTION SLIDER WRAPPER -->
-				</div>
-			</div>
-		</div>
-	</section>
-    <main><div>        </div>
-    </main>
-    <section class="backgroung-map">
-        <div id="map"></div>
-        <div class="container">
-            <div class="contact">
-                <h2 class="underline">Контакты</h2>
-                <ul>
-                    <li><span class="tiny">Телефон:</span><br /><span class="big">+7 (812) 425-64-08</span></li>
-                    <li><span class="tiny">Наш адрес:</span><br /><span class="big">Санкт-Петербург, Громова 4, оф. 371, 373</span></li>
-                    <li><span class="tiny">Email</span><br /><span class="big"><a href="mailto:info@pugofka.com">info@pugofka.com</a></span></li>
-                    <li><span class="tiny">Добавляйтесь в друзья</span><br />
-                        <ul class="social-list">
-                            <li><a href="https://www.facebook.com/pugofkacom/" target="_blank"><img src="/local/templates/blog_2015/css/img/fb.png"></a></li>
-                            <li><a href="http://twitter.com/pugofkacom" target="_blank"><img src="/local/templates/blog_2015/css/img/twitter.png"></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a href="/bitrix/redirect.php?event1=download_presentation&event2=main_page&goto=/local/pdf/pugofka_presentation.pdf" target="_blank" class="btn-danger">Скачать презентацию</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">&copy; 2018 pugofka</div>
-                <div class="col-md-2 col-md-offset-7"><span class="bitrix"></span></div>
-            </div>
-        </div>
-    </footer>
-    <script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
-<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script><script src="/bitrix/js/main/core/core.min.js?1723557458225422"></script><script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
-<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
-</script>
-<script>BX.Runtime.registerExtension({"name":"ui.dexie","namespace":"BX.Dexie3","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"ls","namespace":"window","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"fx","namespace":"window","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"fc","namespace":"window","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"pull.protobuf","namespace":"BX","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"rest.client","namespace":"window","loaded":true});</script>
-<script>(window.BX||top.BX).message({"pull_server_enabled":"N","pull_config_timestamp":0,"pull_guest_mode":"N","pull_guest_user_id":0});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
-<script>BX.Runtime.registerExtension({"name":"pull.client","namespace":"BX","loaded":true});</script>
-<script>BX.Runtime.registerExtension({"name":"pull","namespace":"window","loaded":true});</script>
-<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","COOKIE_PREFIX":"PUGOFKA","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s1","SITE_DIR":"\/"});</script><script  src="/bitrix/cache/js/s1/blog_2015/kernel_main/kernel_main_v1.js?1723558782155575"></script>
-<script src="/bitrix/js/ui/dexie/dist/dexie3.bundle.min.js?172355721088274"></script>
-<script src="/bitrix/js/main/core/core_ls.min.js?17232231677365"></script>
-<script src="/bitrix/js/main/core/core_frame_cache.min.js?172355731111210"></script>
-<script src="/bitrix/js/pull/protobuf/protobuf.min.js?172322316276433"></script>
-<script src="/bitrix/js/pull/protobuf/model.min.js?172322316214190"></script>
-<script src="/bitrix/js/rest/client/rest.client.min.js?17232238649240"></script>
-<script src="/bitrix/js/pull/client/pull.client.min.js?172355715049580"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=AN8_BVwBAAAAgvTPUwIAPTe9qWOIB5-2MQ_sQcGTa-1abikAAAAAAAAAAAAI5W4gOLrYMNCrYlRSE1Iyg7Is5w==&lang=ru_RU"></script>
-<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_fx.js","\/bitrix\/js\/main\/session.js","\/bitrix\/js\/main\/pageobject\/pageobject.js","\/bitrix\/js\/main\/core\/core_window.js","\/bitrix\/js\/main\/date\/main.date.js","\/bitrix\/js\/main\/core\/core_date.js","\/bitrix\/js\/main\/utils.js","\/local\/revolution\/js\/jquery.themepunch.tools.min.js","\/local\/revolution\/js\/jquery.themepunch.revolution.min.js","\/local\/js\/jquery-1.11.3.min.js","\/local\/js\/bootstrap.min.js","\/local\/js\/main.min.js","\/local\/js\/jquery.colorbox-min.js"]);</script>
-<script>BX.setCSSList(["\/local\/revolution\/css\/settings.css","\/local\/revolution\/css\/layers.css","\/local\/revolution\/css\/navigation.css","\/local\/templates\/.default\/components\/bitrix\/news.list\/reviews_2015\/style.css","\/local\/css\/colorbox.css","\/local\/css\/styles.min.css","\/local\/templates\/.default\/components\/bitrix\/menu\/menu_2015\/style.css","\/local\/templates\/blog_2015\/template_styles.css"]);</script>
-
-
-<script  src="/bitrix/cache/js/s1/blog_2015/template_6e61c573dd875b0b5b8212fe693465b3/template_6e61c573dd875b0b5b8212fe693465b3_v1.js?1723557570372984"></script>
-<script  src="/bitrix/cache/js/s1/blog_2015/page_4e99c40ca12ce462e46ac8508a1e580d/page_4e99c40ca12ce462e46ac8508a1e580d_v1.js?1723557708152592"></script>
-<script>var _ba = _ba || []; _ba.push(["aid", "aa37d29ed88950c5b9b80ca56c2e9a9c"]); _ba.push(["host", "pugofka.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
-<script>
-            $(document).ready(function(){
-                $(".group1").colorbox({rel:'group1'});
-            });
-            </script>
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter189795 = new Ya.Metrika({id:189795,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    trackHash:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<script type="text/javascript">
-		$(document).ready(function() {
-	
-			revapiLogo = $("#slider_logo").revolution({
-				sliderType:"carousel",
-				sliderLayout:"fullwidth",
-				gridwidth:175,
-				gridheight:35,
-				disableProgressBar:"on",
-				stopAtSlide:1,
-				stopAfterLoops:0,
-				carousel:{
-					horizontal_align:"center",
-					vertical_align:"center",
-					infinity:"on",
-					space:120,
-					maxVisibleItems:5,
-					stretch:"off",
-					fadeout:"on",
-					maxRotation:0,
-					minScale:20,
-					vary_fade:"on",
-					vary_rotation:"off",
-					vary_scale:"on",
-					border_radius:"0px",
-					padding_top:0,
-					padding_bottom:0
-				}
-			});
-			revapiRev = $("#slider_review").revolution({
-				sliderType:"standard",
-				sliderLayout:"auto",
-				delay:9000,
-				disableProgressBar:"on",
-				navigation:{
-					arrows:{
-						enable:true,
-						hide_onmobile:false,
-						hide_onleave:false
-					},
-					bullets:{enable: false}
-				},
-				gridwidth:960,
-				gridheight:500
-			});
-			
-			revapiRev.one('revolution.slide.onloaded', function() {
-				revapiRev.on('revolution.slide.onchange', function(e, data) {
-					revapiLogo.revshowslide(data.slideIndex);
-				});
-				revapiLogo.on('revolution.slide.onchange', function(e, data) {
-					revapiRev.revshowslide(data.slideIndex);
-				});
-			})
-		});
-</script><script type="text/javascript">
-        $(document).ready(function() {
-            revapiTop = $("#slider1").revolution({
-                sliderType:"standard",
-                sliderLayout:"auto",
-                delay:9000,
-                navigation:{
-                    arrows:{enable:true},
-                    bullets:{
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:800,
-                        style:"zeus",
-                        hide_onleave:false,
-                        direction:"horizontal",
-                        h_align:"center",
-                        v_align:"bottom",
-                        h_offset:0,
-                        v_offset:30,
-                        space:5,
-                        tmp:''
-                    }
-                },
-                gridwidth:940,
-                gridheight:530
-            });
-            revapiBottom = $("#slider2").revolution({
-                sliderType:"standard",
-                sliderLayout:"auto",
-                navigation: {
-                    arrows:{enable:false}
-                },
-                minHeight:100,
-                gridwidth:940,
-                gridheight:100,
-                stopAtSlide:1,
-                stopAfterLoops:0
-            });
-            revapiTop.one('revolution.slide.onloaded', function() {
-                revapiTop.on("revolution.slide.onbeforeswap",function (e) {
-                    revapiBottom.revnext();
-                });
-            });
-        });
-    </script>
+<div id="footer">
+  <p id="legal" style="text-align: center"><b><font color="#000000">Copyright © 2021 Перспектива-2А</font></b></p>
+</div>
 </body>
-</html><!--0a1a6960166c24f155ba3176fb990b2f-->
+</html>
