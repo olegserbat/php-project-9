@@ -36,12 +36,12 @@ class Url
         return !is_null($this->getId());
     }
 
-    public function getCreated_at(): mixed
+    public function getCreatedAt(): mixed
     {
         return $this->created_at;
     }
 
-    public function setCreated_at($createdAt = null)
+    public function setCreatedAt($createdAt = null)
     {
         if ($createdAt) {
             $time = Carbon::parse($createdAt);
@@ -57,7 +57,7 @@ class Url
         [$address] = $urlData;
         $url = new Url();
         $url->setAddress($address);
-        $url->setCreated_at();
+        $url->setCreatedAt();
         return $url;
     }
 
@@ -65,7 +65,7 @@ class Url
     {
         $url = new self();
         $url->setAddress($urlData['address']);
-        $url->setCreated_at($urlData['created_at']);
+        $url->setCreatedAt($urlData['created_at']);
         $url->setId($urlData['id']);
         return $url;
     }

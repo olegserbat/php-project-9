@@ -12,8 +12,7 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: bisque">
     <div class="container-fluid">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -37,11 +36,11 @@
         </div>
     </div>
 </nav>
-
+<section style="margin-left: 200px; margin-right: 200px">
 <h2>Сайты</h2>
-<table class="table table-bordered table-hover" data-test="checks">
+<table class="table table-bordered table-hover" data-test="urls">
     <thead>
-    <tr>
+    <tr style="border: 2px solid ; border-collapse: collapse; border-top: 2px solid ;">
         <th>ID</th>
         <th>Имя</th>
         <th>Последняя проверка</th>
@@ -50,10 +49,8 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($allUrlChecks
-
-    as $check): ?>
-    <tr>
+    <?php foreach ($allUrlChecks as $check): ?>
+    <tr style="border: 2px; solid ; border-collapse: collapse; border-top: 2px solid; border-bottom: 2px solid">
         <td><?= $check['url_id'] ?></td>
         <td><a href="/urls/<?= (int)$check['url_id'] ?>"> <?= $check['name'] ?></a></td>
         <td><?= $check['created_at'] ?></td>
@@ -62,3 +59,5 @@
     </tbody>
     <?php endforeach; ?>
 </table>
+</section>
+</body>

@@ -73,7 +73,7 @@ class UrlRepository
         $stmt = $this->conn->prepare($sql);
         $id = $url->getId();
         $address = $url->getAddress();
-        $created_at = $url->getCreated_at();
+        $created_at = $url->getCreatedAt();
         $stmt->bindParam(':address', $address);
         $stmt->bindParam(':created_at', $created_at);
         $stmt->bindParam(':id', $id);
@@ -85,7 +85,7 @@ class UrlRepository
         $sql = "INSERT INTO urls ( address, created_at) VALUES ( :address, :created_at)";
         $stmt = $this->conn->prepare($sql);
         $address = $url->getAddress();
-        $created_at = $url->getCreated_at();
+        $created_at = $url->getCreatedAt();
         $stmt->bindParam(':address', $address);
         $stmt->bindParam(':created_at', $created_at);
         $stmt->execute();

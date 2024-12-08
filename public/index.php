@@ -1,4 +1,5 @@
 <?php
+
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\Url;
@@ -121,10 +122,8 @@ $app->get('/urls/{id}', function ($request, $response, array $args) {
 $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) use ($router) {
     $id = $args['url_id'];
     $address = $request->getParsedBodyParam('name');
-
     $client = new Client();
     try {
-
         $urlInform = $client->request('GET', $address, ['allow_redirects' => true, 'http_errors' => true]);
         //$urlInform = $client->request ( 'GET' ,  $address );
         //$urlInform = $client->get($address);
@@ -151,11 +150,14 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
             $h1 = '';
         }
         $urlChek = new \App\UrlCheck();
-        $urlChekData = ['description' => $description, 'h1' => $h1, 'title' => $title, 'status_code' => $statusCod, 'url_id' => $id];
+        $urlChekData = ['description' => $description,
+                       'h1' => $h1,
+                       'title' => $title,
+                       'status_code' => $statusCod,
+                       'url_id' => $id];
         $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
-
     } catch (ClientException $e) {
         $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
         return $response->withRedirect("/urls/$id");
@@ -168,7 +170,11 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         $h1 = "{$statusCod} Temporary Redirect";
         $title = "{$statusCod} Temporary Redirect";
         $description = '';
-        $urlChekData = ['description' => $description, 'h1' => $h1, 'title' => $title, 'status_code' => $statusCod, 'url_id' => $id];
+        $urlChekData = ['description' => $description,
+                        'h1' => $h1,
+                        'title' => $title,
+                        'status_code' => $statusCod,
+                        'url_id' => $id];
         $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
@@ -195,4 +201,3 @@ $app->get('/urls', function ($request, $response) {
 })->setName('urls');
 
 $app->run();
-
