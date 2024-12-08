@@ -61,9 +61,9 @@ class Url
         return $url;
     }
 
-    public function makeOjectUrl(array $urlData): Url
+    public static function makeObjectUrl(array $urlData): Url
     {
-        $url = new Url();
+        $url = new self();
         $url->setAddress($urlData['address']);
         $url->setCreated_at($urlData['created_at']);
         $url->setId($urlData['id']);

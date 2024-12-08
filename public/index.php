@@ -28,8 +28,7 @@ $container->set('flash', function () {
 });
 
 $container->set(\PDO::class, function () {
-
-    if(empty($_ENV['DATABASE_URL'])) {
+    if (empty($_ENV['DATABASE_URL'])) {
         $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
         $user = 'oleg';
         $password = '';
@@ -73,7 +72,6 @@ $app->post('/', function ($request, $response) {
     if (!isset($errors)) {
         $urlData = new Url();
         $newUrl = $urlData->fromArray([$url['name']]);
-        //$urlRepository = new UrlRepository($this->get(\PDO::class));
         $urlRepository = $this->get(UrlRepository::class);
         $checkResult = $urlRepository->check($url['name']);
         if (!$checkResult) {
@@ -100,12 +98,11 @@ $app->get('/urls/{id}', function ($request, $response, array $args) {
     $status = 'before check';
     $urlRepository = $this->get(UrlRepository::class);
     $urlDataArray = $urlRepository->find($id);
-    $urlData = new Url;
-    $url = $urlData->makeOjectUrl($urlDataArray);
+    $url = Url::makeObjectUrl($urlDataArray);
     $urlCheckRepo = $this->get(\App\UrlCheckRepository::class);
     $checkResultArray = $urlCheckRepo->findUrlCheck($id);
     $arrayUrlCheckObject = [];
-    if ($checkResultArray != false) {
+    if ($checkResultArray) {
         $status = 'after check';
         $urlCheckObject = new \App\UrlCheck();
         foreach ($checkResultArray as $item) {
@@ -114,7 +111,6 @@ $app->get('/urls/{id}', function ($request, $response, array $args) {
     }
     $params = [
         'flash' => $flash,
-        'id' => $id,
         'url' => $url,
         'status' => $status,
         'arrayUrlCheckObject' => $arrayUrlCheckObject,
@@ -133,78 +129,60 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         //$urlInform = $client->request ( 'GET' ,  $address );
         //$urlInform = $client->get($address);
         $statusCod = $urlInform->getStatusCode();
-        if ($statusCod >= 300 && $statusCod < 400) {
-            $h1 = "{$statusCod} Temporary Redirect";
-            $title = "{$statusCod} Temporary Redirect";
-            $description = '';
-            $this->get('flash')->addMessage('warning', 'Проверка была выполнена успешно, но сервер ответил с ошибкой');
+        $this->get('flash')->addMessage('success', 'Страница успешно проверена');
+        $body = $urlInform->getBody()->getContents();
+        $document = new Document($body);
+        $description = $document->first("meta[name=description]");
+        if ($description) {
+            $description = $description->attr('content');
         } else {
-            $this->get('flash')->addMessage('success', 'Страница успешно проверена');
-            $body = $urlInform->getBody()->getContents();
-            $document = new Document($body);
-            $description = $document->first("meta[name=description]");
-            if ($description) {
-                $description = $description->attr('content');
-            } else {
-                $description = '';
-            }
-            $title = $document->first('title');
-            if ($title) {
-                $title = $title->text();
-            } else {
-                $title = '';
-            }
-            $h1 = $document->first('h1');
-            if ($h1) {
-                $h1 = $h1->text();
-            } else {
-                $h1 = '';
-            }
-
-            file_put_contents('temprorary.txt', $body);
-            //preg_match("/(?<=<title>).+?(?=<\/title>)/", $body, $title);
+            $description = '';
         }
-        $status = 'after check';
+        $title = $document->first('title');
+        if ($title) {
+            $title = $title->text();
+        } else {
+            $title = '';
+        }
+        $h1 = $document->first('h1');
+        if ($h1) {
+            $h1 = $h1->text();
+        } else {
+            $h1 = '';
+        }
         $urlChek = new \App\UrlCheck();
         $urlChekData = ['description' => $description, 'h1' => $h1, 'title' => $title, 'status_code' => $statusCod, 'url_id' => $id];
-        $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
+        $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
 
     } catch (ClientException $e) {
-        $response2 = $e->getMessage();
-        var_dump('client',$response2);
-        die();
+        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+        return $response->withRedirect("/urls/$id");
     } catch (ServerException $e) {
-        $response2 = $e->getMessage();
-        var_dump('server', $response2, $e);
-        die();
+        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+        return $response->withRedirect("/urls/$id");
     } catch (TooManyRedirectsException $e) {
-        var_dump('too many redirect',$e->getCode());
-        die();
-    } catch (ConnectException $e ) {
-        var_dump('connect',$e);
-        die();
+        $this->get('flash')->addMessage('warning', 'Проверка была выполнена успешно, но сервер ответил с ошибкой');
+        $statusCod = $e->getCode();
+        $h1 = "{$statusCod} Temporary Redirect";
+        $title = "{$statusCod} Temporary Redirect";
+        $description = '';
+        $urlChekData = ['description' => $description, 'h1' => $h1, 'title' => $title, 'status_code' => $statusCod, 'url_id' => $id];
+        $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
+        $repo = $this->get(\App\UrlCheckRepository::class);
+        $repo->save($urlChekObject);
+    } catch (ConnectException $e) {
+        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+        return $response->withRedirect("/urls/$id");
     } catch (RequestException $e) {
-        $response2 = $e->getMessage();
-        var_dump('request',$response2, $e);
-        die();
-    }
-    catch (\Throwable $e) {
-        var_dump($e);die();
+        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+        return $response->withRedirect("/urls/$id");
+    } catch (\Throwable $e) {
         $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
         return $response->withRedirect("/urls/$id");
     }
-
-
-    $route = $router->urlFor('getUrlId', ['id' => $id], ['status' => $status, 'id' => $id]);
-    return $response
-        ->withHeader('Location', $route)
-        ->withStatus(302);
-    //return $response->withRedirect($route);
-    //return $response->withRedirect("/urls/$id",301, $params);
-    //return $response->withRedirect($this->router->urlFor('getUrlsId', [], $params));
-    //return $this->get('renderer')->render($response, 'url.phtml', $params);
+    return $response->withRedirect("/urls/$id");
 });
 
 $app->get('/urls', function ($request, $response) {

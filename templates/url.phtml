@@ -38,8 +38,8 @@
     </div>
 </nav>
 
-<div class="alert alert-<?=array_key_first($flash)?>" role="alert">
-    <?php   if (count($flash) > 0) : ?>
+<div class="alert alert-<?= array_key_first($flash) ?>" role="alert">
+    <?php if (count($flash) > 0) : ?>
         <ul>
             <?php foreach ($flash as $messages) : ?>
                 <?php foreach ($messages as $message) : ?>
@@ -90,19 +90,15 @@
         <tbody>
         <?php foreach ($arrayUrlCheckObject as $check): ?>
             <tr>
-                <td><?= $check->getId() ?></td>
-                <td><?= $check->getStatusCod() ?></td>
+                <td class="text-break"><?= $check->getId() ?></td>
+                <td class="text-break"><?= $check->getStatusCod() ?></td>
                 <td class="text-break"><?= $check->getH1() ?></td>
                 <td class="text-break"><?= $check->getTitle() ?></td>
                 <td class="text-break"><?= $check->getDescription() ?></td>
-                <td><?= $check->getCreatedAt() ?></td>
+                <td class="text-break"><?= $check->getCreatedAt() ?></td>
             </tr>
             </tbody>
         <?php endforeach; ?>
     <?php endif ?>
 </table>
-<?php
-//var_dump($flash);
-
-//var_dump($url);
-?>
+<?php ?>

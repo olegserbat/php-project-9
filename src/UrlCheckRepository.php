@@ -51,13 +51,12 @@ class UrlCheckRepository
     public function findAllUrls(): mixed
     {
         $sql = "
-        SELECT DISTINCT ON (url_checks.url_id)
-        url_checks.url_id, 
-        (SELECT urls.address FROM urls WHERE urls.id = url_checks.url_id) AS name,    
-        url_checks.created_at,
-        url_checks.status_code 
-        FROM url_checks
-        ORDER BY url_checks.url_id, url_checks.created_at DESC;
+        SELECT 
+        urls.id AS url_id,
+        urls.address AS name,
+        (SELECT url_checks.created_at FROM url_checks WHERE urls.id = url_checks.url_id ORDER BY url_checks.created_at DESC LIMIT 1) AS created_at,
+        (SELECT url_checks.status_code FROM url_checks WHERE urls.id = url_checks.url_id ORDER BY url_checks.created_at DESC LIMIT 1) AS status_code
+        FROM urls;
         ";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
