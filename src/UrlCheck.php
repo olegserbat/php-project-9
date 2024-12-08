@@ -1,4 +1,5 @@
 <?php
+
 namespace App;
 
 use Carbon\Carbon;
@@ -13,91 +14,97 @@ class UrlCheck
     private string $createdAt;
     private string $title;
 
-    public function getId():int
+    public function getId(): int
     {
         return $this->id;
     }
 
-    public function getUrlId():int
+    public function getUrlId(): int
     {
         return $this->urlId;
     }
 
-    public function getH1():string
+    public function getH1(): string
     {
         return $this->h1;
     }
 
-    public function getStatusCod():int
+    public function getStatusCod(): int
     {
         return $this->statusCode;
     }
 
-    public function getDescription():string
+    public function getDescription(): string
     {
         return $this->description;
     }
 
-    public function getCreatedAt():string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
 
-    public function getTitle():string
+    public function getTitle(): string
     {
         return $this->title;
     }
 
-    public function setId (int $id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
-    public function setUrlId (int $urlId): void
+    public function setUrlId(int $urlId): void
     {
         $this->urlId = $urlId;
     }
 
-    public function setStatuseCod (int $status): void
+    public function setStatuseCod(int $status): void
     {
         $this->statusCode = $status;
     }
 
-    public function setDescription (string $string): void
+    public function setDescription(string $string): void
     {
         $this->description = $string;
     }
 
-    public function setH1 (string $string): void
+    public function setH1(string $string): void
     {
         $this->h1 = $string;
     }
 
-    public function setTitle (string $string): void
+    public function setTitle(string $string): void
     {
         $this->title = $string;
     }
 
-    public function setCreatedAt ($createdAt = null): void
+    public function setCreatedAt($createdAt = null): void
     {
-        if($createdAt) {
-            $time =  Carbon::parse($createdAt);
+        if ($createdAt) {
+            $time = Carbon::parse($createdAt);
         } else {
             $time = Carbon::now();
         }
         $this->createdAt = $time->setTimezone('Europe/Moscow');
     }
 
-    public function makeUrlCheckObject ( array $urlCheck): UrlCheck
+    public function makeUrlCheckObject(array $urlCheck): UrlCheck
     {
         $url = new UrlCheck();
-        //$url->setId($urlCheck['id']);
-        $url->setCreatedAt();
+        if (isset($urlCheck['id'])) {
+            $url->setId($urlCheck['id']);
+        }
+        if (isset($urlCheck['created_at'])) {
+            $url->setCreatedAt($urlCheck['created_at']);
+        } else {
+            $url->setCreatedAt();
+        }
         $url->setDescription($urlCheck['description']);
         $url->setH1($urlCheck['h1']);
         $url->setTitle($urlCheck['title']);
         $url->setStatuseCod($urlCheck['status_code']);
         $url->setUrlId($urlCheck['url_id']);
-        return  $url;
+        return $url;
     }
 }

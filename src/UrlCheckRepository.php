@@ -11,7 +11,7 @@ class UrlCheckRepository
         $this->conn = $conn;
     }
 
-    public function save (UrlCheck $url): void
+    public function save(UrlCheck $url): void
     {
         $sql = "INSERT INTO url_checks ( url_id, status_code, h1, title, description, created_at) 
                 VALUES ( :url_id, :status_code, :h1, :title, :description, :created_at)";
@@ -29,9 +29,44 @@ class UrlCheckRepository
         $stmt->bindParam(':description', $description);
         $stmt->bindParam(':created_at', $created_at);
         $stmt->execute();
-        $id = (int) $this->conn->lastInsertId();
+        $id = (int)$this->conn->lastInsertId();
         $url->setId($id);
 
+    }
+
+    public function findUrlCheck(int $url_id): mixed
+    {
+        $sql = "SELECT * FROM url_checks WHERE url_id = ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(1, $url_id);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        if ($result !== []) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
+    public function findAllUrls(): mixed
+    {
+        $sql = "
+        SELECT DISTINCT ON (url_checks.url_id)
+        url_checks.url_id, 
+        (SELECT urls.address FROM urls WHERE urls.id = url_checks.url_id) AS name,    
+        url_checks.created_at,
+        url_checks.status_code 
+        FROM url_checks
+        ORDER BY url_checks.url_id, url_checks.created_at DESC;
+        ";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        if ($result !== []) {
+            return $result;
+        } else {
+            return false;
+        }
     }
 
 }

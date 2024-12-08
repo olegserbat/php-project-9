@@ -1,4 +1,5 @@
 <?php
+
 namespace App;
 
 class UrlRepository
@@ -24,7 +25,7 @@ class UrlRepository
         return $urls;
     }
 
-    public function find (int $id): mixed
+    public function find(int $id): mixed
     {
         $sql = "SELECT * FROM urls WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
@@ -42,7 +43,7 @@ class UrlRepository
     {
         $sql = "SELECT * FROM urls WHERE address = ?";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(1,$address);
+        $stmt->bindParam(1, $address);
         $stmt->execute();
         $result = $stmt->fetch();
         if ($result !== []) {
@@ -79,7 +80,7 @@ class UrlRepository
         $stmt->execute();
     }
 
-    public function save (Url $url): void
+    public function save(Url $url): void
     {
         $sql = "INSERT INTO urls ( address, created_at) VALUES ( :address, :created_at)";
         $stmt = $this->conn->prepare($sql);
@@ -88,7 +89,7 @@ class UrlRepository
         $stmt->bindParam(':address', $address);
         $stmt->bindParam(':created_at', $created_at);
         $stmt->execute();
-        $id = (int) $this->conn->lastInsertId();
+        $id = (int)$this->conn->lastInsertId();
         $url->setId($id);
 //        $id = (int) $this->conn->lastInsertId();
 //        $url->setId($id);

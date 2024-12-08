@@ -1,14 +1,1034 @@
-<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ru"><head><meta content="&#1055;&#1086;&#1080;&#1089;&#1082; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1080; &#1074; &#1080;&#1085;&#1090;&#1077;&#1088;&#1085;&#1077;&#1090;&#1077;: &#1074;&#1077;&#1073; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1099;, &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1082;&#1080;, &#1074;&#1080;&#1076;&#1077;&#1086; &#1080; &#1084;&#1085;&#1086;&#1075;&#1086;&#1077; &#1076;&#1088;&#1091;&#1075;&#1086;&#1077;." name="description"><meta content="noodp, " name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var _g={kEI:'LMVEZ_jpG8bn2roPorzA8AM',kEXPI:'0,18168,3682118,663,435,448528,90133,2872,2891,43028,36419,9708,78218,127630,130793,8155,23351,22435,9779,62657,92025,1804,47082,1632,9711,3785,15783,14181,7599,5208501,10476,135,447,5991925,2841551,408,5,2,1,52,50,1,8,10,1,6,1,6,1,9,2,4,1,6,1,26,75,73,6,10,5,5,6,178,47,1,5,11,23934777,4043709,16673,25199209,12799,100481,22622,15164,8183,10491,38938,9235,12440,6749,1898,5,7224,13466,1285,7034,2106,3078,1521,328,540,3919,1766,23407,6,952,3625,5633,688,7851,24,21979,1346,13702,15635,17570,238,12568,797,16870,10674,4137,6759,2485,1801,1034,2281,3,2,2542,350,2929,5354,41,11881,1283,475,1,4883,2587,324,312,1,33,1351,145,874,336,1757,441,1,6146,3690,7267,1149,6224,392,1136,49,60,17,3,112,895,3,7,1681,1311,233,243,4123,808,32,810,1413,374,2,843,2,1547,129,1462,627,2,1538,8,183,343,2,188,2,2069,1212,1,639,3,1831,543,68,734,887,767,461,313,1069,111,537,260,494,1132,1375,1380,845,1510,706,415,157,215,2,545,466,762,916,348,45,316,588,439,371,356,556,212,155,1091,1487,327,134,1494,250,703,59,1,6,1824,553,37,546,689,214,243,104,30,1988,1141,457,2,201,3,3,421,254,18,1,5,4,4,4,378,1,5,4,4,4,2,218,310,94,68,181,342,15,351,551,48,478,233,83,387,908,403,485,303,172,878,587,57,91,3,2,9,8,1,291,346,74,97,210,2,34,90,17,55,529,32,169,320,186,370,50,188,125,808,2,39,74,1452,60,219,21011034,397114,18,2780,704,866,5237,203,368,914,452,290,303,8,1148',kBL:'0rTr',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='webhp';google.kHL='ru';})();(function(){
-var g=this||self;function k(){return window.google&&window.google.kOPI||null};var l,m=[];function n(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||l}function p(a){for(var b=null;a&&(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}function q(a){/^http:/i.test(a)&&window.location.protocol==="https:"&&(google.ml&&google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a}
-function r(a,b,d,c,h){var e="";b.search("&ei=")===-1&&(e="&ei="+n(c),b.search("&lei=")===-1&&(c=p(c))&&(e+="&lei="+c));var f=b.search("&cshid=")===-1&&a!=="slh";c="&zx="+Date.now().toString();g._cshid&&f&&(c+="&cshid="+g._cshid);(d=d())&&(c+="&opi="+d);return"/"+(h||"gen_204")+"?atyp=i&ct="+String(a)+"&cad="+(b+e+c)};l=google.kEI;google.getEI=n;google.getLEI=p;google.ml=function(){return null};google.log=function(a,b,d,c,h,e){e=e===void 0?k:e;d||(d=r(a,b,e,c,h));if(d=q(d)){a=new Image;var f=m.length;m[f]=a;a.onerror=a.onload=a.onabort=function(){delete m[f]};a.src=d}};google.logUrl=function(a,b){b=b===void 0?k:b;return r("",a,b)};}).call(this);(function(){google.y={};google.sy=[];var d;(d=google).x||(d.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1});var e;(e=google).sx||(e.sx=function(a){google.sy.push(a)});google.lm=[];var f;(f=google).plm||(f.plm=function(a){google.lm.push.apply(google.lm,a)});google.lq=[];var g;(g=google).load||(g.load=function(a,b,c){google.lq.push([[a],b,c])});var h;(h=google).loadAll||(h.loadAll=function(a,b){google.lq.push([a,b])});google.bx=!1;var k;(k=google).lx||(k.lx=function(){});var l=[],m;(m=google).fce||(m.fce=function(a,b,c,n){l.push([a,b,c,n])});google.qce=l;}).call(this);google.f={};(function(){
-document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a=c==="1"||c==="q"&&!a.elements.q.value?!0:!1}else a=!1;a&&(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&&a!==document.documentElement;a=a.parentElement)if(a.tagName==="A"){a=a.getAttribute("data-nohref")==="1";break a}a=!1}a&&b.preventDefault()},!0);}).call(this);</script><style>#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
-</style><style>body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#000;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}.Ucigb{width:458px}</style><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){window.google.erd={jsr:1,bv:2122,de:true,dpf:'I34DFAyyasvIob0nCfXVlhP9F9o-oEa9gteC_9ZlC7c'};
-var g=this||self;var k,l=(k=g.mei)!=null?k:1,n,p=(n=g.sdo)!=null?n:!0,q=0,r,t=google.erd,v=t.jsr;google.ml=function(a,b,d,m,e){e=e===void 0?2:e;b&&(r=a&&a.message);d===void 0&&(d={});d.cad="ple_"+google.ple+".aple_"+google.aple;if(google.dl)return google.dl(a,e,d,!0),null;b=d;if(v<0){window.console&&console.error(a,b);if(v===-2)throw a;b=!1}else b=!a||!a.message||a.message==="Error loading script"||q>=l&&!m?!1:!0;if(!b)return null;q++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&ei="+b(google.kEI);google.kEXPI&&(c+="&jexpid="+b(google.kEXPI));c+="&srcpg="+b(google.sn)+"&jsr="+b(t.jsr)+
-"&bver="+b(t.bv);t.dpf&&(c+="&dpf="+b(t.dpf));var f=a.lineNumber;f!==void 0&&(c+="&line="+f);var h=a.fileName;h&&(h.indexOf("-extension:/")>0&&(e=3),c+="&script="+b(h),f&&h===window.location.href&&(f=document.documentElement.outerHTML.split("\n")[f],c+="&cad="+b(f?f.substring(0,300):"No script found.")));google.ple&&google.ple===1&&(e=2);c+="&jsel="+e;for(var u in d)c+="&",c+=b(u),c+="=",c+=b(d[u]);c=c+"&emsg="+b(a.name+": "+a.message);c=c+"&jsst="+b(a.stack||"N/A");c.length>=12288&&(c=c.substr(0,12288));a=c;m||google.log(0,"",a);return a};window.onerror=function(a,b,d,m,e){r!==a&&(a=e instanceof Error?e:Error(a),d===void 0||"lineNumber"in a||(a.lineNumber=d),b===void 0||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,a.name==="SyntaxError"||a.message.substring(0,11)==="SyntaxError"||a.message.indexOf("Script error")!==-1?3:0));r=null;p&&q>=l&&(window.onerror=null)};})();</script></head><body bgcolor="#fff"><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function(){window.n && window.n();if (document.images){new Image().src=src;}
-if (!iesg){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}
-}
-})();</script><div id="mngb"><div id=gbar><nobr><b class=gb1>&#1055;&#1086;&#1080;&#1089;&#1082;</b> <a class=gb1 href="https://www.google.com/imghp?hl=ru&tab=wi">&#1050;&#1072;&#1088;&#1090;&#1080;&#1085;&#1082;&#1080;</a> <a class=gb1 href="https://maps.google.ru/maps?hl=ru&tab=wl">&#1050;&#1072;&#1088;&#1090;&#1099;</a> <a class=gb1 href="https://play.google.com/?hl=ru&tab=w8">Play</a> <a class=gb1 href="https://www.youtube.com/?tab=w1">YouTube</a> <a class=gb1 href="https://news.google.com/?tab=wn">&#1053;&#1086;&#1074;&#1086;&#1089;&#1090;&#1080;</a> <a class=gb1 href="https://mail.google.com/mail/?tab=wm">&#1055;&#1086;&#1095;&#1090;&#1072;</a> <a class=gb1 href="https://drive.google.com/?tab=wo">&#1044;&#1080;&#1089;&#1082;</a> <a class=gb1 style="text-decoration:none" href="https://www.google.ru/intl/ru/about/products?tab=wh"><u>&#1045;&#1097;&#1105;</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a href="http://www.google.ru/history/optout?hl=ru" class=gb4>&#1048;&#1089;&#1090;&#1086;&#1088;&#1080;&#1103; &#1074;&#1077;&#1073;-&#1087;&#1086;&#1080;&#1089;&#1082;&#1072;</a> | <a  href="/preferences?hl=ru" class=gb4>&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080;</a> | <a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=ru&passive=true&continue=https://www.google.com/&ec=GAZAAQ" class=gb4>&#1042;&#1086;&#1081;&#1090;&#1080;</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div></div><center><br clear="all" id="lgpd"><div id="XjhHGf"><img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png" style="padding:28px 0 14px" width="272" id="hplogo"><br><br></div><form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center" nowrap=""><input name="ie" value="ISO-8859-1" type="hidden"><input value="ru" name="hl" type="hidden"><input name="source" type="hidden" value="hp"><input name="biw" type="hidden"><input name="bih" type="hidden"><div class="ds" style="height:32px;margin:4px 0"><div style="position:relative;zoom:1"><input class="lst Ucigb" style="margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000;padding-right:38px" autocomplete="off" value="" title="&#1055;&#1086;&#1080;&#1089;&#1082; &#1074; Google" maxlength="2048" name="q" size="57"><img src="/textinputassistant/tia.png" style="position:absolute;cursor:pointer;right:5px;top:4px;z-index:300" data-script-url="/textinputassistant/13/ru_tia.js" id="tsuid_LMVEZ_jpG8bn2roPorzA8AM_1" alt="" height="23" width="27"><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var id='tsuid_LMVEZ_jpG8bn2roPorzA8AM_1';document.getElementById(id).onclick = function(){var s = document.createElement('script');s.src = this.getAttribute('data-script-url');document.body.appendChild(s);};})();</script></div></div><br style="line-height:0"><span class="ds"><span class="lsbb"><input class="lsb" value="&#1055;&#1086;&#1080;&#1089;&#1082; &#1074; Google" name="btnG" type="submit"></span></span><span class="ds"><span class="lsbb"><input class="lsb" id="tsuid_LMVEZ_jpG8bn2roPorzA8AM_2" value="&#1052;&#1085;&#1077; &#1087;&#1086;&#1074;&#1077;&#1079;&#1105;&#1090;!" name="btnI" type="submit"><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var id='tsuid_LMVEZ_jpG8bn2roPorzA8AM_2';document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}
-else top.location='/doodles/';};})();</script><input value="AL9hbdgAAAAAZ0TTPMpxpCiwY95uNf5-EeBIl0y7sxbR" name="iflsig" type="hidden"></span></span></td><td class="fl sblc" align="left" nowrap="" width="25%"><a href="/advanced_search?hl=ru&amp;authuser=0">&#1056;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1085;&#1099;&#1081; &#1087;&#1086;&#1080;&#1089;&#1082;</a></td></tr></table><input id="gbv" name="gbv" type="hidden" value="1"><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var a,b="1";if(document&&document.getElementById)if(typeof XMLHttpRequest!="undefined")b="2";else if(typeof ActiveXObject!="undefined"){var c,d,e=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"];for(c=0;d=e[c++];)try{new ActiveXObject(d),b="2"}catch(h){}}a=b;if(a=="2"&&location.search.indexOf("&gbv=2")==-1){var f=google.gbvu,g=document.getElementById("gbv");g&&(g.value=a);f&&window.setTimeout(function(){location.href=f},0)};}).call(this);</script></form><div style="font-size:83%;min-height:3.5em"><br></div><span id="footer"><div style="font-size:10pt"><div style="margin:19px auto;text-align:center" id="WqQANb"><a href="/intl/ru/ads/">&#1056;&#1077;&#1082;&#1083;&#1072;&#1084;&#1072;</a><a href="http://www.google.ru/intl/ru/services/">&#1056;&#1077;&#1096;&#1077;&#1085;&#1080;&#1103; &#1076;&#1083;&#1103; &#1073;&#1080;&#1079;&#1085;&#1077;&#1089;&#1072;</a><a href="/intl/ru/about.html">&#1042;&#1089;&#1105; &#1086; Google</a><a href="https://www.google.com/setprefdomain?prefdom=RU&amp;prev=https://www.google.ru/&amp;sig=K_RTQBO58A5tyE8k3Vsi28tedsK-c%3D">Google.ru</a></div></div><p style="font-size:8pt;color:#70757a">&copy; 2024 - <a href="/intl/ru/policies/privacy/">&#1050;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;</a> - <a href="/intl/ru/policies/terms/">&#1059;&#1089;&#1083;&#1086;&#1074;&#1080;&#1103;</a></p></span></center><script nonce="fK-_biUaitnqD6npMyzPKw">(function(){window.google.cdo={height:757,width:1440};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b){var c=window.document,d=c.compatMode=="CSS1Compat"?c.documentElement:c.body;a=d.clientWidth;b=d.clientHeight}if(a&&b&&(a!=google.cdo.width||b!=google.cdo.height)){var e=google,f=e.log,g="/client_204?&atyp=i&biw="+a+"&bih="+b+"&ei="+google.kEI,h="",k=window.google&&window.google.kOPI||null;k&&(h+="&opi="+k);f.call(e,"","",g+h)};}).call(this);})();</script>  <script nonce="fK-_biUaitnqD6npMyzPKw">(function(){google.xjs={basecomb:'/xjs/_/js/k\x3dxjs.hp.en.OJ970Hq9NbE.es5.O/ck\x3dxjs.hp.mmB1lklTJJc.L.X.O/am\x3dBAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAYAAAwGgAAAAIAAgQAAAAAAAAAAAAAAEQAAAoAwgQAACC-IwAQAIsAAPAC/d\x3d1/ed\x3d1/dg\x3d0/ujg\x3d1/rs\x3dACT90oErZdi3YGBE92CVk9qHfAhwqQhJ0A',basecss:'/xjs/_/ss/k\x3dxjs.hp.mmB1lklTJJc.L.X.O/am\x3dBAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAwAgAAAAIAAgQAAAAAAAAAAAAAAEQAAAoAwgQ/rs\x3dACT90oG_O7l9vqJQJOxroj246lVyRXT3rg',basejs:'/xjs/_/js/k\x3dxjs.hp.en.OJ970Hq9NbE.es5.O/am\x3dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACC-IwAQAIsAAPAC/dg\x3d0/rs\x3dACT90oFAqc0-E4a3JPvMNe4vg478yMwlkw',excm:[]};})();</script>       <script nonce="fK-_biUaitnqD6npMyzPKw">(function(){var u='/xjs/_/js/k\x3dxjs.hp.en.OJ970Hq9NbE.es5.O/am\x3dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACC-IwAQAIsAAPAC/d\x3d1/ed\x3d1/dg\x3d3/rs\x3dACT90oFAqc0-E4a3JPvMNe4vg478yMwlkw/m\x3dsb_he,d';var st=1;var amd=1000;var mmd=0;var pod=true;
-var e=this||self;function f(){var a,b,d;if(b=a=(b=window.google)==null?void 0:(d=b.ia)==null?void 0:d.r.B2Jtyd)b=a.m,b=b===1||b===5;return b&&a.cbfd!=null&&a.cbvi!=null?a:void 0};function g(){var a=[u];if(!google.dp){for(var b=0;b<a.length;b++){var d=a[b],c=document.createElement("link");c.as="script";c.href=d;c.rel="preload";document.body.appendChild(c)}google.dp=!0}};google.ps===void 0&&(google.ps=[]);function h(){var a=u,b=function(){};google.lx=google.stvsc?b:function(){k(a);google.lx=b};google.bx||google.lx()}function l(a,b){b&&(a.src=b);var d=a.onload;a.onload=function(c){d&&d(c);google.ps=google.ps.filter(function(C){return a!==C})};google.ps.push(a);document.body.appendChild(a)}google.as=l;function k(a){google.timers&&google.timers.load&&google.tick&&google.tick("load","xjsls");var b=document.createElement("script");b.onerror=function(){google.ple=1};b.onload=function(){google.ple=0};google.xjsus=void 0;l(b,a);google.aple=-1;google.dp=!0};function m(a){var b=a.getAttribute("jscontroller");return(b==="UBXHI"||b==="R3fhkb"||b==="TSZEqd")&&a.hasAttribute("data-src")}function n(){for(var a=document.getElementsByTagName("img"),b=0,d=a.length;b<d;b++){var c=a[b];if(c.hasAttribute("data-lzy_")&&Number(c.getAttribute("data-atf"))&1&&!m(c))return!0}return!1}for(var p=document.getElementsByTagName("img"),q=0,r=p.length;q<r;++q){var t=p[q];Number(t.getAttribute("data-atf"))&1&&m(t)&&(t.src=t.getAttribute("data-src"))};var w,x,y,z,A,B;function D(){google.xjsu=u;e._F_jsUrl=u;A=function(){h()};w=!1;x=(st===1||st===3)&&!!google.caft&&!n();y=f();z=(st===2||st===3)&&!!y&&!n();B=pod}function E(){w||x||z||(A(),w=!0)}setTimeout(function(){google&&google.tick&&google.timers&&google.timers.load&&google.tick("load","xjspls");D();if(x||z){if(x){var a=function(){x=!1;E()};google.caft(a);window.setTimeout(a,amd)}z&&(a=function(){z=!1;E()},y.cbvi.push(a),window.setTimeout(a,mmd));B&&(w||g())}else A()},0);})();window._ = window._ || {};window._DumpException = _._DumpException = function(e){throw e;};window._s = window._s || {};_s._DumpException = _._DumpException;window._qs = window._qs || {};_qs._DumpException = _._DumpException;(function(){var t=[4,65536,0,0,0,0,0,0,66560,0,268437504,202113030,20506,268959769,20971520,0,0,671088912,4988960,797442048,135266339,556,47];window._F_toggles = window._xjs_toggles = t;})();window._F_installCss = window._F_installCss || function(css){};(function(){google.jl={bfl:0,dw:false,ine:false,ubm:false,uwp:true,vs:false};})();(function(){var pmc='{\x22d\x22:{},\x22sb_he\x22:{\x22agen\x22:false,\x22cgen\x22:false,\x22client\x22:\x22heirloom-hp\x22,\x22dh\x22:true,\x22ds\x22:\x22\x22,\x22fl\x22:true,\x22host\x22:\x22google.com\x22,\x22jsonp\x22:true,\x22msgs\x22:{\x22cibl\x22:\x22\\u0423\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c \\u043f\\u043e\\u0438\\u0441\\u043a\\u043e\\u0432\\u044b\\u0439 \\u0437\\u0430\\u043f\\u0440\\u043e\\u0441\x22,\x22dym\x22:\x22\\u0412\\u043e\\u0437\\u043c\\u043e\\u0436\\u043d\\u043e, \\u0432\\u044b \\u0438\\u043c\\u0435\\u043b\\u0438 \\u0432 \\u0432\\u0438\\u0434\\u0443:\x22,\x22lcky\x22:\x22\\u041c\\u043d\\u0435 \\u043f\\u043e\\u0432\\u0435\\u0437\\u0451\\u0442!\x22,\x22lml\x22:\x22\\u041f\\u043e\\u0434\\u0440\\u043e\\u0431\\u043d\\u0435\\u0435...\x22,\x22psrc\x22:\x22\\u042d\\u0442\\u043e\\u0442 \\u0437\\u0430\\u043f\\u0440\\u043e\\u0441 \\u0431\\u044b\\u043b \\u0443\\u0434\\u0430\\u043b\\u0435\\u043d \\u0438\\u0437 \\u0432\\u0430\\u0448\\u0435\\u0439 \\u003Ca href\x3d\\\x22/history\\\x22\\u003E\\u0438\\u0441\\u0442\\u043e\\u0440\\u0438\\u0438 \\u0432\\u0435\\u0431-\\u043f\\u043e\\u0438\\u0441\\u043a\\u0430\\u003C/a\\u003E\x22,\x22psrl\x22:\x22\\u0423\\u0434\\u0430\\u043b\\u0438\\u0442\\u044c\x22,\x22sbit\x22:\x22\\u041f\\u043e\\u0438\\u0441\\u043a \\u043f\\u043e \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0435\x22,\x22srch\x22:\x22\\u041f\\u043e\\u0438\\u0441\\u043a \\u0432 Google\x22},\x22ovr\x22:{},\x22pq\x22:\x22\x22,\x22rfs\x22:[],\x22stok\x22:\x22bt-mgdpyolOQrKxxK9JVSYI9pus\x22}}';google.pmc=JSON.parse(pmc);})();(function(){var b=function(a){var c=0;return function(){return c<a.length?{done:!1,value:a[c++]}:{done:!0}}};
-var e=this||self;var g,h;a:{for(var k=["CLOSURE_FLAGS"],l=e,n=0;n<k.length;n++)if(l=l[k[n]],l==null){h=null;break a}h=l}var p=h&&h[610401301];g=p!=null?p:!1;var q,r=e.navigator;q=r?r.userAgentData||null:null;function t(a){return g?q?q.brands.some(function(c){return(c=c.brand)&&c.indexOf(a)!=-1}):!1:!1}function u(a){var c;a:{if(c=e.navigator)if(c=c.userAgent)break a;c=""}return c.indexOf(a)!=-1};function v(){return g?!!q&&q.brands.length>0:!1}function w(){return u("Safari")&&!(x()||(v()?0:u("Coast"))||(v()?0:u("Opera"))||(v()?0:u("Edge"))||(v()?t("Microsoft Edge"):u("Edg/"))||(v()?t("Opera"):u("OPR"))||u("Firefox")||u("FxiOS")||u("Silk")||u("Android"))}function x(){return v()?t("Chromium"):(u("Chrome")||u("CriOS"))&&!(v()?0:u("Edge"))||u("Silk")}function y(){return u("Android")&&!(x()||u("Firefox")||u("FxiOS")||(v()?0:u("Opera"))||u("Silk"))};var z=v()?!1:u("Trident")||u("MSIE");y();x();w();var A=!z&&!w(),D=function(a){if(/-[a-z]/.test("ved"))return null;if(A&&a.dataset){if(y()&&!("ved"in a.dataset))return null;a=a.dataset.ved;return a===void 0?null:a}return a.getAttribute("data-"+"ved".replace(/([A-Z])/g,"-$1").toLowerCase())};var E=[],F=null;function G(a){a=a.target;var c=performance.now(),f=[],H=f.concat,d=E;if(!(d instanceof Array)){var m=typeof Symbol!="undefined"&&Symbol.iterator&&d[Symbol.iterator];if(m)d=m.call(d);else if(typeof d.length=="number")d={next:b(d)};else throw Error("b`"+String(d));for(var B=[];!(m=d.next()).done;)B.push(m.value);d=B}E=H.call(f,d,[c]);if(a&&a instanceof HTMLElement)if(a===F){if(c=E.length>=4)c=(E[E.length-1]-E[E.length-4])/1E3<5;if(c){c=google.getEI(a);a.hasAttribute("data-ved")?f=a?D(a)||"":"":f=(f=
-a.closest("[data-ved]"))?D(f)||"":"";f=f||"";if(a.hasAttribute("jsname"))a=a.getAttribute("jsname");else{var C;a=(C=a.closest("[jsname]"))==null?void 0:C.getAttribute("jsname")}google.log("rcm","&ei="+c+"&tgtved="+f+"&jsname="+(a||""))}}else F=a,E=[c]}window.document.addEventListener("DOMContentLoaded",function(){document.body.addEventListener("click",G)});}).call(this);</script></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="веб-студия, сайт, корпоративный сайт, интеграция, 1С, битрикс, юми" />
+<meta name="description" content="Веб-студия Пугофка предлагает взвешенные решения для вашего бизнеса от корпоративного сайта, до интернет-магазина с интеграцией" />
+<style type="text/css">.bx-composite-btn {background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;border-radius: 15px;color: #fff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url(/bitrix/images/main/composite/sprite-2x.png);background-size: 42px 124px;}}.bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}.bx-btn-white {background-position: right 0;color: #fff !important;}.bx-btn-black {background-position: right -31px;color: #000 !important;}.bx-btn-red {background-position: right -62px;color: #555 !important;}.bx-btn-grey {background-position: right -93px;color: #657b89 !important;}.bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}.bx-composite-loading {display: block;width: 40px;height: 40px;background: url(/bitrix/images/main/composite/loading.gif);}</style>
+<script data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {"CACHE_MODE":"HTMLCACHE","banner":{"url":"https:\/\/www.1c-bitrix.ru\/composite\/","text":"Быстро с 1С-Битрикс","bgcolor":"#eb4523","style":"white"},"storageBlocks":[],"dynamicBlocks":[],"AUTO_UPDATE":true,"AUTO_UPDATE_TTL":0,"version":2};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);</script>
+<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Windows/i.test(ua)){cl += ' bx-win';}else if (/Macintosh/i.test(ua)){cl += " bx-mac";}else if (/Linux/i.test(ua) && !/Android/i.test(ua)){cl += " bx-linux";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Firefox/.test(ua)){cl += " bx-firefox";}ht.className = htc ? htc + " " + cl : cl;})(window, document, navigator);</script>
+
+
+<link href="/bitrix/cache/css/s1/blog_2015/page_9c98f042176eb33669cdd0ca1e1891f1/page_9c98f042176eb33669cdd0ca1e1891f1_v1.css?1723557708193032" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/blog_2015/template_ce93bbafba9a55abf67f88ad1e6cfa0f/template_ce93bbafba9a55abf67f88ad1e6cfa0f_v1.css?1723557570152102" type="text/css"  data-template-style="true" rel="stylesheet" />
+
+
+
+
+
+
+
+                <title>PUGOFKA — веб-разработка и дизайн</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="/local/favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/local/favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/local/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/local/favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/local/favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/local/favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/local/favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/local/favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/local/favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/local/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/local/favicon/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/local/favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/local/favicon/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/local/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/local/favicon/manifest.json">
+        <link rel="mask-icon" href="/local/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/local/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/local/favicon/mstile-144x144.png">
+        <meta name="msapplication-config" content="/local/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+                     </head>
+<body>
+    <div id="panel">
+            </div>
+    <!-- Yandex.Metrika counter -->
+<noscript><div><img src="//mc.yandex.ru/watch/189795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->    <header class="l-header">
+        <div class="container">
+            <div class="row m-navbar">
+                <div class="col-sm-4 col-xs-4 col-md-3">
+                    <a class="logo" href="/"><img src="/local/templates/blog_2015/css/img/logo.png" alt=""></a>
+                </div>
+                <div class="col-md-5 col-sm-8 col-xs-8">
+                    <nav class="navbar navbar-default main_menu" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Меню</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                        
+<menu class="nav navbar-nav">
+	<li><a href="/cases/">Кейсы</a></li>
+	<li><a href="/blog/">Блог</a></li>
+	<li><a href="/about/">О нас</a></li>
+</menu>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <span class="tel">+7 (812) 425-64-08</span>
+<script id="bx24_form_button" data-skip-moving="true">
+        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+               (w[b].forms=w[b].forms||[]).push(arguments[0])};
+               if(w[b]['forms']) return;
+               s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+               h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+       })(window,document,'https://pugofka.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+
+       b24form({"id":"12","lang":"ru","sec":"1o0mkp","type":"button","click":""});
+</script><button class="b24-web-form-popup-btn-12 btn-danger header_feedback">Написать нам</button>
+                                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+                        <div class="container">
+                </div></main>    <section class="main_banner">
+        <div class="container">
+			<div class="row m-banner">
+	<div class="col-md-12 c-nopad">
+		<div class="rev_slider_wrapper" style="width:100%">
+			<div id="slider1" data-version="5.0">
+				<ul>
+									 <li
+						data-transition="incube"
+						data-link="/cases/akmr/"
+						data-target="_self"><img src="/upload/rk/57f/akmr_case_cover.png" alt="AKMR"></li>
+									 <li
+						data-transition="incube"
+						data-link="/cases/questor/"
+						data-target="_self"><img src="/upload/rk/b79/questor_cover.png" alt="Questor"></li>
+									 <li
+						data-transition="incube"
+						data-link="/54fz/"
+						data-target="_blank"><img src="/upload/rk/ce0/54_fz_2.png" alt=""></li>
+									 <li
+						data-transition="incube"
+						data-link="/translation-of-a-website-to-https/"
+						data-target="_blank"><img src="/upload/rk/e9e/https_2.png" alt=""></li>
+									 <li
+						data-transition="incube"
+						data-link="/cases/artsteklov/"
+						data-target="_self"><img src="/upload/rk/404/artsteklov_preview_case-_1_.png" alt="3D-Art Steklov"></li>
+								</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			<div class="row">
+	<div class="col-md-12">
+		<div class="rev_slider_wrapper" style="width:100%">
+			<div id="slider2" data-version="5.0">
+				<ul>
+									<li
+						data-transition="cube">
+						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#9ec12f" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+						<div
+							class="tp-caption tp-resizeme rs-parallaxlevel-2"
+							data-x="['center','center','center','center']"
+							data-y="['middle','middle','middle','middle']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-transform_idle="o:1;"
+							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+							data-start="100"
+							data-splitin="none"
+							data-splitout="none"
+							data-responsive_offset="on"
+							style="z-index: 6; white-space: nowrap;font-style:italic;"><span class="underline">14 из 15</span><p><strong>клиентов</strong> <br /> рекомендуют нас</p>						</div>
+					</li>
+									<li
+						data-transition="cube">
+						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#1a9de0" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+						<div
+							class="tp-caption tp-resizeme rs-parallaxlevel-2"
+							data-x="['center','center','center','center']"
+							data-y="['middle','middle','middle','middle']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-transform_idle="o:1;"
+							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+							data-start="100"
+							data-splitin="none"
+							data-splitout="none"
+							data-responsive_offset="on"
+							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Сделали</p><span class="underline">>170</span><p>проектов</p>						</div>
+					</li>
+									<li
+						data-transition="cube">
+						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#e84ba5" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+						<div
+							class="tp-caption tp-resizeme rs-parallaxlevel-2"
+							data-x="['center','center','center','center']"
+							data-y="['middle','middle','middle','middle']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-transform_idle="o:1;"
+							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+							data-start="100"
+							data-splitin="none"
+							data-splitout="none"
+							data-responsive_offset="on"
+							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Средняя скорость <br/>работы наших сайтов</p><span class="underline">< 0.7</span><p><strong>секунды</strong></p>						</div>
+					</li>
+									<li
+						data-transition="cube">
+						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#fcbd15" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+						<div
+							class="tp-caption tp-resizeme rs-parallaxlevel-2"
+							data-x="['center','center','center','center']"
+							data-y="['middle','middle','middle','middle']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-transform_idle="o:1;"
+							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+							data-start="100"
+							data-splitin="none"
+							data-splitout="none"
+							data-responsive_offset="on"
+							style="z-index: 6; white-space: nowrap;font-style:italic;"><span class="underline">19 из 20</span><p><strong>клиентов</strong> <br /> работают с нами более года</p>						</div>
+					</li>
+									<li
+						data-transition="cube">
+						<img src="/local/templates/blog_2015/img/dummy.png" style="background-color:#fcbd15" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+						<div
+							class="tp-caption tp-resizeme rs-parallaxlevel-2"
+							data-x="['center','center','center','center']"
+							data-y="['middle','middle','middle','middle']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-transform_idle="o:1;"
+							data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+							data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+							data-start="100"
+							data-splitin="none"
+							data-splitout="none"
+							data-responsive_offset="on"
+							style="z-index: 6; white-space: nowrap;font-style:italic;"><p>Наш опыт:</p><span class="underline">5+</span><p><strong>лет</strong> <br /> на рынке</p>						</div>
+					</li>
+								</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			
+        </div>
+    </section>
+    <section class="l-services">
+        <div class="container">
+            <div class="row m-services" id="services">
+                <div class="col-md-6 c-nopad-left js-mouseover">
+                    <div class="services-box orange">
+                        <div class="small">
+                            <div style="height: 300px"><img src="/local/templates/blog_2015/img/Tree.png" height="263" width="189" alt=""></div>
+                            <h2 class="underline">Мне нужен новый сайт</h2>
+                            <p>Мы создаем, обслуживаем и помогаем развивать сайты любой сложности.</p>
+                            <a href="javascript:void(0);" class="btn-more">посмотреть предложения</a>
+                        </div>
+                        <div class="full">
+                            <i class="close-btn"></i>
+                            <h2>Мне нужен сайт</h2>
+                            <ul class="nav nav-tabs responsive-tabs">
+                                <li class="active"><a href="#serveces">Сайт товара или услуги</a></li>
+                                <li><a href="#companysite">Сайт компании</a></li>
+                                <li><a href="#shop">Интернет-магазин</a></li>
+                                <li><a href="#corp">Корпоративные порталы</a></li>
+                                <li><a href="#portal">Портал, сервис</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active row" id="serveces">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Планируя рекламную компанию, учитывайте, что конверсия значительно увеличивается, если вы направляете вашего пользователя на специально созданную страницу. Такие страницы называются «посадочными» (landing page).<br />
+                                    Идеально подходят для увеличения продаж отдельных товаров или услуг.</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Оптимальный</h3>
+                                                <ul>
+                                                    <li>Ни одна заявка не потеряется — интеграция с CRM</li>
+                                                    <li>Подбираем оптимальное решение</li>
+                                                    <li>Выжимаем максимум конверсии</li>
+                                                    <li>Интегрируем в единую экосистему</li>
+                                                </ul>
+                                                <div class="order-block-date">от 1 недели</div>
+                                                <div class="order-block-price">от <strong>30 т. р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="companysite">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Работая с нами, Вы получите высокий результат и принципиально качественный продукт. Каждый вложенный Вами рубль будет работать на Вас.</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Старт</h3>
+                                                <ul>
+                                                    <li>Коробка</li>
+                                                    <li>Быстро</li>
+                                                    <li>Дешево</li>
+                                                    <li>Шаблон</li>
+                                                </ul>
+                                                <div class="order-block-date">от 3-х недель</div>
+                                                <div class="order-block-price">от <strong>20</strong> до <strong>50 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <div class="order-block-box active">
+                                                <h3 class="underline">Оптимальный</h3>
+                                                <ul>
+                                                    <li>Уникальный дизайн</li>
+                                                    <li>Наладим обратную связь с клиентом</li>
+                                                </ul>
+                                                <div class="order-block-date">от 2-х недель</div>
+                                                <div class="order-block-price">от <strong>70</strong> до <strong>250 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Большой бизнес</h3>
+                                                <ul>
+                                                    <li>Автоматизируем сложные процессы</li>
+                                                    <li>Просто о сложном</li>
+                                                    <li>Запускаем инструменты продаж</li>
+                                                </ul>
+                                                <div class="order-block-date">от 2-х месяцев</div>
+                                                <div class="order-block-price">от <strong>300 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="shop">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Клиенты приходят к нам с опасениями, что запустить интернет-магазин сложно и дорого. Часто, для запуска подходит базовый функционал 1С-Битрикс. В этом случае запустить продажи в интернет-магазине можно уже через неделю, в дальнейшем развивая сайт. <br />
+                                        Если вам необходим уникальный продукт с нестандартным функционалом, мы предложим лучшее решение. </br >
+                                        Мы даём гарантию на работу. Даже нестандартные, персонализированные сайты мы делаем так, чтобы обновление Битрикса проходило безболезненно, чтобы новинки внедрялись легко. Каждый созданный нами проект проходит монитор качества 1С-Битрикс.</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Старт</h3>
+                                                <ul>
+                                                    <li>Коробочное решение</li>
+                                                    <li>Быстрый старт (от 3-х дней до запуска сайта)</li>
+                                                </ul>
+                                                <div class="order-block-date">Гарантия 1 месяц (только на наши работы)</div>
+                                                <div class="order-block-price">от <strong>60</strong> до <strong>150 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Малый бизнес</h3>
+                                                <ul>
+                                                    <li>Уникальный дизайн</li>
+                                                    <li>Базовый стандартный набор функционала</li>
+                                                    <li>Запуск менее чем за 1 месяц</li>
+                                                </ul>
+                                                <div class="order-block-date">Гарантия 6 месяцев</div>
+                                                <div class="order-block-price">от <strong>100</strong> до <strong>400 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Оптимальный</h3>
+                                                <ul>
+                                                    <li>Проработка стратегии (UX, маркетинговая)</li>
+                                                    <li>«Под ключ» — все заботы берем на себя</li>
+                                                    <li>Запускаем продажи на всю катушку: подключаем максимум инструментов для ваших продаж</li>
+                                                    <li>Полный "адаптоз" - расширенная поддержка мобильных устройств</li>
+                                                    <li>Подключение на сайт оплаты банковскими картами (онлайн платежи)</li>
+                                                    <li>Интеграция со сторонними системами (1С, SAP и другие)</li>
+                                                    <li>Подключаем технологии «Композитный сайт», персонализация и другие интересные возможности</li>
+                                                    <li>Наполнение контентом берем на себя</li>
+                                                    <li>1 месяц сопровождения в подарок</li>
+                                                    <li>Запуск от 2,5 месяцев</li>
+                                                </ul>
+                                                <div class="order-block-date">Гарантия 1 год</div>
+                                                <div class="order-block-price">от <strong>300</strong> до <strong>800 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Федеральный уровень</h3>
+                                                <ul>
+                                                    <li>Для действительно крупных проектов</li>
+                                                    <li>Сложные интеграции</li>
+                                                    <li>Максимальная забота о ваших клиентах</li>
+                                                    <li>E-Mail маркетинг на полную катушку</li>
+                                                    <li>А/В тестирование</li>
+                                                    <li>Выжимаем конверсию</li>
+                                                    <li>Обеспечиваем бесперебойную отказоустойчивость 24х7</li>
+                                                </ul>
+                                                <div class="order-block-date">от 4-х месяцев</div>
+                                                <div class="order-block-price">от <strong>800 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="corp">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">В мегаполисах, на конкурентных рынках, невозможно выстроить высокие стандарты обслуживания клиентов без помощи специальных программ. Начните экономить свое время! <br />
+                                        Наши компетенции и опыт внедрения Битрикс24 поможет вам избавиться от рутины и автоматизировать бизнес-процессы.</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="portal">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Решаем сложные задачи. Разрабатываем мобильные приложения, интернет-сервисы, порталы «с нуля». Если вам нужен продукт, которого ещё нет на рынке, мы разработаем вместе с вами подробное техническое задание, создадим прототипы и воплотим в жизнь самые смелые идеи.</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Оптимальный</h3>
+                                                <ul>
+                                                    <li>Индивидуальная разработка</li>
+                                                    <li>Высокие нагрузки</li>
+                                                    <li>Максимальная автоматизация</li>
+                                                </ul>
+                                                <div class="order-block-date">от 2-х месяцев</div>
+                                                <div class="order-block-price">от <strong>600 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 c-nopad-right js-mouseover">
+                    <div class="services-box green">
+                        <div class="small">
+                            <div style="height: 300px"><img src="/local/templates/blog_2015/img/Skotch.png" height="237" width="250" alt="2"></div>
+                            <h2 class="underline">У меня уже есть сайт</h2>
+                            <p>Измерим пульс вашему сайту, оценим потенциал, найдем и устраним все ошибки, обсудим развитие и поддержку, увеличим продажи.</p>
+                            <a href="javascript:void(0);" class="btn-more">посмотреть предложения</a>
+                        </div>
+                        <div class="full">
+                            <i class="close-btn"></i>
+                            <h2>У меня уже есть сайт</h2>
+                            <ul class="nav nav-tabs responsive-tabs">
+                                <li class="active"><a href="#develop">Развиваем сайт</a></li>
+                                <li><a href="#increase-sales">Увеличиваем продажи</a></li>
+                                <li><a href="#increase-speed">Увеличиваем скорость работы</a></li>
+                                <li><a href="#repair">Исправляем ошибки</a></li>
+                                <li><a href="#audit">Аудит</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane row active" id="develop">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Развиваем сайт</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="increase-sales">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Увеличиваем продажи</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="increase-speed">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Увеличиваем скорость работы</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="repair">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9">Исправляем ошибки</p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Оставить заявку</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="audit">
+                                    <div class="img-block col-md-3"><img src="/local/templates/blog_2015/img/iPad.png"></div>
+                                    <p class="col-md-9"> Аудит </p>
+                                    <div class="clearfix"></div>
+                                    <div class="order-block row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="order-block-box">
+                                                <h3 class="underline">Аудит - измеряем пульс вашего сайта</h3>
+                                                <ul>
+                                                    <li>Функциональное / ручное тестирование</li>
+                                                    <li>Аудит юзабилити</li>
+                                                    <li>Аудит кода / производительсти (только для 1С-Битрикс)</li>
+                                                    <li>Анализ коммерческих факторов</li>
+                                                    <li>Даем общие рекомендации по развитию продукта</li>
+                                                    <li>Оформляем все в доступный и наглядный отчет</li>
+                                                </ul>
+                                                <div class="order-block-date">до 5 дней</div>
+                                                <div class="order-block-price"><strong>35 т.р.</strong></div>
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#service_header" class="order-block-btn">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="service_header" tabindex="-1" role="dialog" aria-labelledby="service_headerLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content feedback_content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="close_btn"></i>
+                            </button>
+                            <div class="ajax-conteiner noDisplay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section style="padding-top: 50px; overflow-y: hidden;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 c-nopad">
+					<div class="rev_slider_wrapper" style="width:100%">
+						<!-- START REVOLUTION SLIDER 5.0 auto mode -->
+						<div id="slider_logo" data-version="5.0">
+							<ul>
+																	<li>
+										<img src="/upload/iblock/619/clovergroup.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/c8c/alfastrah.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/33c/velomart.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/1da/sharik.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/24e/ilike.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/41f/begemot.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/1e9/stronto.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/7b1/akvabook.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/9ea/hse.png" height="35" width="129" alt="1">
+									</li>
+																	<li>
+										<img src="/upload/iblock/c30/spa.png" height="35" width="129" alt="1">
+									</li>
+															</ul>
+						</div><!-- END REVOLUTION SLIDER -->
+					</div><!-- END REVOLUTION SLIDER WRAPPER -->
+					<div class="rev_slider_wrapper" style="width:100%">
+						<!-- START REVOLUTION SLIDER 5.0 auto mode -->
+						<div id="slider_review" data-version="5.0">
+						<div class="slider-triangle"></div>
+							<ul>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[50,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Работы были выполнены качественно и строго в заявленные сроки. Мы довольны результатом, но, что не менее важно, в процессе у нас не возникало никаких нареканий к действиям менеджеров и технических специалистов компании. Хотим поблагодарить коллектив за отличную работу.</p>
+																					<a href="/upload/iblock/ec0/otzyv_clovergroup.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Наринэ Фатыхова	</p>  <small>Руководитель Службы PR и рекламы</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[40,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Клиентоориентированный подход к работе, выполнение работ в оперативные сроки, профессионализм - это то, на чем строится вся работа в данной веб-студии. По мере поступления новых задач сотрудниками студии предлагались грамотные и интересные решения.</p>
+																					<a href="/upload/iblock/e18/alpha.png" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Арсен Даллакян</p>  <small>Руководитель управления маркетинга и развития Московского Регионального Центра ОАО &quot;АльфаСтрахование&quot;</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[0,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Только положительные впечатления! До этого работал с рядом фирм, из которых результат приходилось выбивать, и постоянно напоминать о договоренностях. С этими ребятами история<br />
+разительно отличается! Все сроки, договоренности и пожелания соблюдены, результатом работы очень доволен. По сравнению со старым сайтом конверсия резко увеличилась, продажи пошли, а заказы обрабатывать стало намного удобнее. Спасибо руководству и сотрудникам компании «Pugofka»!</p>
+																				<p class="underline">Дмитрий Белоусов</p>  <small></small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[20,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>По рекомендации обратились в компанию &quot;Пугофка&quot;. Ребята молодцы. Реализовали все что было задумано и проявили инициативу, в результате которой ряд функционала был оптимизирован, что положительно<br />
+повлияло на юзабилити и скорость работы сайта. Конверсия выросла, мы вошли во вкус. Будем продолжать совершенствоваться.</p>
+																					<a href="/upload/iblock/fd6/doc05218420151202115101.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Александра Гусева</p>  <small>Директор по развитию</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[10,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Нам было очень приятно сотрудничать с коллективом «Pugofka». Специалисты «Pugofka» моментально  поняли, что нам нужно и очень точно, стильно и творчески воплотили наши идеи. Весь процесс создания  сайта проходил очень гладко и в атмосфере полного взаимопонимания. А если и возникали какие-то вопросы,то сотрудники «Pugofka» быстро, четко и вежливо их решали. Спасибо им большое!</p>
+																				<p class="underline">Алена Юшкевич</p>  <small>Директор по обучению</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[0,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Студии &quot;Пугофка&quot; я хочу дать самый говорящий для руководителя любой компании отзыв: проект сдан, и я решительным образом не заметил, когда и как это произошло.<br />
+Оценка проекта была зафиксирована заранее и не менялась аж до самого завершения работы. Менеджеры ни разу не жаловались на срыв сроков или качества. <br />
+С полной уверенностью и радостью готов рекомендовать студию &quot;Пугофка&quot; для веб-разработки</p>
+																					<a href="/upload/iblock/914/rekomendatsiya_dlya_pugofka.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Андраш Густи</p>  <small>руководитель студии &quot;Бегемот-Бегемот&quot;</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[0,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>В результате работы появился сайт, соответствующий всем ожиданиям и договоренностям. И сроки, и стоимость все было соблюдено. А после сдачи проекта, продолжительное время обсуждали дальнейшее его развитие. Мною были получены ряд очень ценных рекомендаций и советов по развитию сайта.<br />
+Студию &quot;Пугофка&quot; можно смело рекомендовать друзьям. Никогда за работу этих ребят не придется краснеть</p>
+																					<a href="/upload/iblock/c47/otzyv_stronto.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Макаров С.Г.</p>  <small>Генеральный директор ООО &quot;Стронто&quot;</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[20,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Вот уже второй год мы сотрудничаем с ООО &quot;Пугофка&quot;. При работе над сайтом, иногда наше мнение не совпадало, но всегда четко и грамотно обосновывали предложенные технические решения, и именно эта принципиальность позволила избежать многих ошибок. <br />
+Спасибо за вашу отзывчивость и оптимизм</p>
+																					<a href="/upload/iblock/7a5/2015_10_22_pismo_1022_pugofka_blagodarnost.pdf" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">В.П. Петров</p>  <small>Управляющий партнер</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[80,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>Выражаем искреннюю благодарность и признательность за длительное сотрудничество, высокий профессиональный уровень и гибкий подход к решению наших задач</p>
+																					<a href="/upload/iblock/9d3/hse_review_1_.png" target="_blank" class="review-full">Читать отзыв целиком</a>
+																				<p class="underline">Светлана Смельцова</p>  <small>зам.декана Бизнес-школы НИУ ВШЭ Нижний Новгород</small>
+									</div>
+								</li>
+															<li data-transition="slidingoverlayhorizontal">
+																	<img src="/local/templates/blog_2015/img/dummy.png" style='background-color:#008eff' data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+									<div
+										class="tp-caption tp-resizeme rs-parallaxlevel-2 quote"
+										data-x="['center','center','center','center']"
+										data-y="['middle','middle','middle','middle']"
+										data-width="960"
+										data-height="414"
+										data-transform_idle="o:1;"
+										data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+										data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+										data-start="1000"
+										data-splitin="none"
+										data-splitout="none"
+										data-responsive_offset="on"
+										data-fontsize="['25','30','30','30']"
+										data-lineheight="['30','30','30','30']"
+										data-voffset="[3,30,30,30]"
+										style="z-index:6;color:white;">
+										<p>В студии «Pugofka» работает опытная команда, которая понимает как реализовывать сложные задачи. Проект Spadream.ru - это не просто интернет-магазин - это<br />
+целый комплекс оnlinе услуг в премиальном сегменте. Поставленные задачи для студии были весьма непросты и требовали понимания сферы деятельности нашей<br />
+компании. Как результат нашей работы‚ мы получили стильный, современный, удобный и в тоже время простой<br />
+интернет-магазин. Спустя две недели работы обновленного сайта мы получили рост конверсии на 2&#37;! </p>
+																				<p class="underline">Виктор Лупейко</p>  <small>Генеральный директор</small>
+									</div>
+								</li>
+														</ul>
+						</div><!-- END REVOLUTION SLIDER -->
+					</div><!-- END REVOLUTION SLIDER WRAPPER -->
+				</div>
+			</div>
+		</div>
+	</section>
+    <main><div>        </div>
+    </main>
+    <section class="backgroung-map">
+        <div id="map"></div>
+        <div class="container">
+            <div class="contact">
+                <h2 class="underline">Контакты</h2>
+                <ul>
+                    <li><span class="tiny">Телефон:</span><br /><span class="big">+7 (812) 425-64-08</span></li>
+                    <li><span class="tiny">Наш адрес:</span><br /><span class="big">Санкт-Петербург, Громова 4, оф. 371, 373</span></li>
+                    <li><span class="tiny">Email</span><br /><span class="big"><a href="mailto:info@pugofka.com">info@pugofka.com</a></span></li>
+                    <li><span class="tiny">Добавляйтесь в друзья</span><br />
+                        <ul class="social-list">
+                            <li><a href="https://www.facebook.com/pugofkacom/" target="_blank"><img src="/local/templates/blog_2015/css/img/fb.png"></a></li>
+                            <li><a href="http://twitter.com/pugofkacom" target="_blank"><img src="/local/templates/blog_2015/css/img/twitter.png"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="/bitrix/redirect.php?event1=download_presentation&event2=main_page&goto=/local/pdf/pugofka_presentation.pdf" target="_blank" class="btn-danger">Скачать презентацию</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">&copy; 2018 pugofka</div>
+                <div class="col-md-2 col-md-offset-7"><span class="bitrix"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script><script src="/bitrix/js/main/core/core.min.js?1723557458225422"></script><script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+</script>
+<script>BX.Runtime.registerExtension({"name":"ui.dexie","namespace":"BX.Dexie3","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"ls","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"fx","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"fc","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"pull.protobuf","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"rest.client","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"pull_server_enabled":"N","pull_config_timestamp":0,"pull_guest_mode":"N","pull_guest_user_id":0});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
+<script>BX.Runtime.registerExtension({"name":"pull.client","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"pull","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","COOKIE_PREFIX":"PUGOFKA","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s1","SITE_DIR":"\/"});</script><script  src="/bitrix/cache/js/s1/blog_2015/kernel_main/kernel_main_v1.js?1723558782155575"></script>
+<script src="/bitrix/js/ui/dexie/dist/dexie3.bundle.min.js?172355721088274"></script>
+<script src="/bitrix/js/main/core/core_ls.min.js?17232231677365"></script>
+<script src="/bitrix/js/main/core/core_frame_cache.min.js?172355731111210"></script>
+<script src="/bitrix/js/pull/protobuf/protobuf.min.js?172322316276433"></script>
+<script src="/bitrix/js/pull/protobuf/model.min.js?172322316214190"></script>
+<script src="/bitrix/js/rest/client/rest.client.min.js?17232238649240"></script>
+<script src="/bitrix/js/pull/client/pull.client.min.js?172355715049580"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=AN8_BVwBAAAAgvTPUwIAPTe9qWOIB5-2MQ_sQcGTa-1abikAAAAAAAAAAAAI5W4gOLrYMNCrYlRSE1Iyg7Is5w==&lang=ru_RU"></script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_fx.js","\/bitrix\/js\/main\/session.js","\/bitrix\/js\/main\/pageobject\/pageobject.js","\/bitrix\/js\/main\/core\/core_window.js","\/bitrix\/js\/main\/date\/main.date.js","\/bitrix\/js\/main\/core\/core_date.js","\/bitrix\/js\/main\/utils.js","\/local\/revolution\/js\/jquery.themepunch.tools.min.js","\/local\/revolution\/js\/jquery.themepunch.revolution.min.js","\/local\/js\/jquery-1.11.3.min.js","\/local\/js\/bootstrap.min.js","\/local\/js\/main.min.js","\/local\/js\/jquery.colorbox-min.js"]);</script>
+<script>BX.setCSSList(["\/local\/revolution\/css\/settings.css","\/local\/revolution\/css\/layers.css","\/local\/revolution\/css\/navigation.css","\/local\/templates\/.default\/components\/bitrix\/news.list\/reviews_2015\/style.css","\/local\/css\/colorbox.css","\/local\/css\/styles.min.css","\/local\/templates\/.default\/components\/bitrix\/menu\/menu_2015\/style.css","\/local\/templates\/blog_2015\/template_styles.css"]);</script>
+
+
+<script  src="/bitrix/cache/js/s1/blog_2015/template_6e61c573dd875b0b5b8212fe693465b3/template_6e61c573dd875b0b5b8212fe693465b3_v1.js?1723557570372984"></script>
+<script  src="/bitrix/cache/js/s1/blog_2015/page_4e99c40ca12ce462e46ac8508a1e580d/page_4e99c40ca12ce462e46ac8508a1e580d_v1.js?1723557708152592"></script>
+<script>var _ba = _ba || []; _ba.push(["aid", "aa37d29ed88950c5b9b80ca56c2e9a9c"]); _ba.push(["host", "pugofka.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<script>
+            $(document).ready(function(){
+                $(".group1").colorbox({rel:'group1'});
+            });
+            </script>
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter189795 = new Ya.Metrika({id:189795,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+	
+			revapiLogo = $("#slider_logo").revolution({
+				sliderType:"carousel",
+				sliderLayout:"fullwidth",
+				gridwidth:175,
+				gridheight:35,
+				disableProgressBar:"on",
+				stopAtSlide:1,
+				stopAfterLoops:0,
+				carousel:{
+					horizontal_align:"center",
+					vertical_align:"center",
+					infinity:"on",
+					space:120,
+					maxVisibleItems:5,
+					stretch:"off",
+					fadeout:"on",
+					maxRotation:0,
+					minScale:20,
+					vary_fade:"on",
+					vary_rotation:"off",
+					vary_scale:"on",
+					border_radius:"0px",
+					padding_top:0,
+					padding_bottom:0
+				}
+			});
+			revapiRev = $("#slider_review").revolution({
+				sliderType:"standard",
+				sliderLayout:"auto",
+				delay:9000,
+				disableProgressBar:"on",
+				navigation:{
+					arrows:{
+						enable:true,
+						hide_onmobile:false,
+						hide_onleave:false
+					},
+					bullets:{enable: false}
+				},
+				gridwidth:960,
+				gridheight:500
+			});
+			
+			revapiRev.one('revolution.slide.onloaded', function() {
+				revapiRev.on('revolution.slide.onchange', function(e, data) {
+					revapiLogo.revshowslide(data.slideIndex);
+				});
+				revapiLogo.on('revolution.slide.onchange', function(e, data) {
+					revapiRev.revshowslide(data.slideIndex);
+				});
+			})
+		});
+</script><script type="text/javascript">
+        $(document).ready(function() {
+            revapiTop = $("#slider1").revolution({
+                sliderType:"standard",
+                sliderLayout:"auto",
+                delay:9000,
+                navigation:{
+                    arrows:{enable:true},
+                    bullets:{
+                        enable:true,
+                        hide_onmobile:true,
+                        hide_under:800,
+                        style:"zeus",
+                        hide_onleave:false,
+                        direction:"horizontal",
+                        h_align:"center",
+                        v_align:"bottom",
+                        h_offset:0,
+                        v_offset:30,
+                        space:5,
+                        tmp:''
+                    }
+                },
+                gridwidth:940,
+                gridheight:530
+            });
+            revapiBottom = $("#slider2").revolution({
+                sliderType:"standard",
+                sliderLayout:"auto",
+                navigation: {
+                    arrows:{enable:false}
+                },
+                minHeight:100,
+                gridwidth:940,
+                gridheight:100,
+                stopAtSlide:1,
+                stopAfterLoops:0
+            });
+            revapiTop.one('revolution.slide.onloaded', function() {
+                revapiTop.on("revolution.slide.onbeforeswap",function (e) {
+                    revapiBottom.revnext();
+                });
+            });
+        });
+    </script>
+</body>
+</html><!--0a1a6960166c24f155ba3176fb990b2f-->
