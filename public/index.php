@@ -40,7 +40,6 @@ $container->set(\PDO::class, function () {
         $username = $databaseUrl['user']; // janedoe
         $password = $databaseUrl['pass']; // mypassword
         $host = $databaseUrl['host']; // localhost
-        $port = $databaseUrl['port']; // 5432
         $dbName = ltrim($databaseUrl['path'], '/'); // mydb
         $dsn = sprintf("pgsql:dbname=%s;host=%s", $dbName, $host);
         $conn = new \PDO($dsn, $username, $password);
