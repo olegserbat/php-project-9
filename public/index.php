@@ -29,7 +29,6 @@ $container->set('flash', function () {
 });
 
 $container->set(\PDO::class, function () {
-    //var_dump($_ENV);die();
     if (empty($_ENV['DATABASE_URL'])) {
         $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
         $user = 'oleg';

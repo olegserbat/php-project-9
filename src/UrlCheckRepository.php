@@ -65,7 +65,7 @@ class UrlCheckRepository
         if ($result !== []) {
             return $result;
         } else {
-            return false;
+            return [];
         }
     }
 }
