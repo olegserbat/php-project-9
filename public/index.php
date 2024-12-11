@@ -29,22 +29,25 @@ $container->set('flash', function () {
 });
 
 $container->set(\PDO::class, function () {
-    if (empty($_ENV['DATABASE_URL'])) {
-        $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
-        $user = 'oleg';
-        $password = '';
-        $conn = new \PDO($dsn, $user, $password);
-        $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
-    } else {
-        $databaseUrl = parse_url($_ENV['DATABASE_URL']);
-        $username = $databaseUrl['user'];
-        $password = $databaseUrl['pass'];
-        $host = $databaseUrl['host'];
-        $dbName = ltrim($databaseUrl['path'], '/');
-        $dsn = sprintf("pgsql:dbname=%s;host=%s", $dbName, $host);
-        $conn = new \PDO($dsn, $username, $password);
-        $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+
+    if (file_exists('../.env')) {
+        $lines = file('../.env');
+        foreach ($lines as $line) {
+            [$key, $value] = explode('=', $line, 2);
+            $key = trim($key);
+            $value = trim($value);
+            $_ENV[$key] = $value;
+        }
     }
+
+    $databaseUrl = parse_url($_ENV['DATABASE_URL']);
+    $username = $databaseUrl['user'];
+    $password = $databaseUrl['pass'];
+    $host = $databaseUrl['host'];
+    $dbName = ltrim($databaseUrl['path'], '/');
+    $dsn = sprintf("pgsql:dbname=%s;host=%s", $dbName, $host);
+    $conn = new \PDO($dsn, $username, $password);
+    $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
 
     return $conn;
 });
