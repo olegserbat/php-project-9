@@ -78,7 +78,7 @@ $app->post('/', function ($request, $response) {
         if (!$checkResult) {
             $urlRepository->save($newUrl);
             $id = $newUrl->getId();
-            $this->get('flash')->addMessage('success', 'Усешно добавлено');
+            $this->get('flash')->addMessage('success', 'Успешно добавлено');
             return $response->withRedirect("/urls/$id");
         } else {
             $id = $checkResult['id'];
