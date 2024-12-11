@@ -29,6 +29,7 @@ $container->set('flash', function () {
 });
 
 $container->set(\PDO::class, function () {
+    //var_dump($_ENV);die();
     if (empty($_ENV['DATABASE_URL'])) {
         $dsn = 'pgsql:dbname=hexletProject3;host=127.0.0.1';
         $user = 'oleg';
@@ -37,10 +38,10 @@ $container->set(\PDO::class, function () {
         $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
     } else {
         $databaseUrl = parse_url($_ENV['DATABASE_URL']);
-        $username = $databaseUrl['user']; // janedoe
-        $password = $databaseUrl['pass']; // mypassword
-        $host = $databaseUrl['host']; // localhost
-        $dbName = ltrim($databaseUrl['path'], '/'); // mydb
+        $username = $databaseUrl['user'];
+        $password = $databaseUrl['pass'];
+        $host = $databaseUrl['host'];
+        $dbName = ltrim($databaseUrl['path'], '/');
         $dsn = sprintf("pgsql:dbname=%s;host=%s", $dbName, $host);
         $conn = new \PDO($dsn, $username, $password);
         $conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
@@ -78,7 +79,7 @@ $app->post('/', function ($request, $response) {
         if (!$checkResult) {
             $urlRepository->save($newUrl);
             $id = $newUrl->getId();
-            $this->get('flash')->addMessage('success', 'Успешно добавлено');
+            $this->get('flash')->addMessage('success', 'Страница успешно добавлена');
             return $response->withRedirect("/urls/$id");
         } else {
             $id = $checkResult['id'];
