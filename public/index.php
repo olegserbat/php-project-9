@@ -88,8 +88,7 @@ $app->post('/urls', function ($request, $response) {
     $params = [
         'errors' => $errors
     ];
-    $response->withStatus(422);
-    return $this->get('renderer')->render($response, 'index.phtml', $params);
+    return $this->get('renderer')->render($response, 'index.phtml', $params)->withStatus(422);
 })->setName('post');
 
 
