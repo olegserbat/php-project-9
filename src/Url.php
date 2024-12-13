@@ -21,27 +21,23 @@ class Url
         return $this->address;
     }
 
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
-    public function setAddress($address): void
+    public function setAddress(string $address): void
     {
         $this->address = $address;
     }
 
-    public function urlExists(): bool
-    {
-        return !is_null($this->getId());
-    }
 
     public function getCreatedAt(): mixed
     {
         return $this->created_at;
     }
 
-    public function setCreatedAt($createdAt = null)
+    public function setCreatedAt(string $createdAt = null)
     {
         if ($createdAt) {
             $time = Carbon::parse($createdAt);

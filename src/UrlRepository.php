@@ -51,33 +51,6 @@ class UrlRepository
         } else {
             return false;
         }
-//        if ($row = $stmt->fetch())  {
-//            $url = Url::fromArray([$row['address'], $row['created_at']]);
-//            $url->setId($row['id']);
-//            return $url;
-//        }
-//        return null;
-    }
-
-//    public function save(Url $url): void {
-//        if ($url->urlExists()) {
-//            $this->update($url);
-//        } else {
-//            $this->create($url);
-//        }
-//    }
-
-    private function update(Url $url): void
-    {
-        $sql = "UPDATE urls SET address = :address, created_at = :created_at WHERE id = :id";
-        $stmt = $this->conn->prepare($sql);
-        $id = $url->getId();
-        $address = $url->getAddress();
-        $created_at = $url->getCreatedAt();
-        $stmt->bindParam(':address', $address);
-        $stmt->bindParam(':created_at', $created_at);
-        $stmt->bindParam(':id', $id);
-        $stmt->execute();
     }
 
     public function save(Url $url): void
@@ -91,7 +64,5 @@ class UrlRepository
         $stmt->execute();
         $id = (int)$this->conn->lastInsertId();
         $url->setId($id);
-//        $id = (int) $this->conn->lastInsertId();
-//        $url->setId($id);
     }
 }

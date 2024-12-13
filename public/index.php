@@ -118,7 +118,7 @@ $app->get('/urls/{id}', function ($request, $response, array $args) {
     return $this->get('renderer')->render($response, 'url.phtml', $params);
 })->setName('getUrlId');
 
-$app->post('/urls/{url_id}/checks', function ($request, $response, array $args) use ($router) {
+$app->post('/urls/{url_id}/checks', function ($request, $response, array $args) {
     $id = $args['url_id'];
     $address = $request->getParsedBodyParam('name');
     $client = new Client();

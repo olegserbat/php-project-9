@@ -79,7 +79,7 @@ class UrlCheck
         $this->title = $string;
     }
 
-    public function setCreatedAt($createdAt = null): void
+    public function setCreatedAt(mixed $createdAt = null): void
     {
         if ($createdAt) {
             $time = Carbon::parse($createdAt);
