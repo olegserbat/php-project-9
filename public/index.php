@@ -52,10 +52,6 @@ $container->set(\PDO::class, function () {
     return $conn;
 });
 
-//$initFilePath = implode('/', [dirname(__DIR__), 'init.sql']);
-//$initSql = file_get_contents($initFilePath);
-//$container->get(\PDO::class)->exec($initSql);
-
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 $app->addErrorMiddleware(true, true, true);
@@ -69,7 +65,7 @@ $app->get('/', function ($request, $response) {
 })->setName('main');
 
 
-$app->post('/', function ($request, $response) {
+$app->post('/urls', function ($request, $response) {
     $url = $request->getParsedBodyParam('url');
     $validUrl = new Validator();
     $errors = $validUrl->validate($url);
