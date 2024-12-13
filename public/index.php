@@ -78,16 +78,17 @@ $app->post('/urls', function ($request, $response) {
             $urlRepository->save($newUrl);
             $id = $newUrl->getId();
             $this->get('flash')->addMessage('success', 'Страница успешно добавлена');
-            return $response->withRedirect("/urls/$id");
+            return $response->withRedirect("/urls/$id", 302);
         } else {
             $id = $checkResult['id'];
             $this->get('flash')->addMessage('success', 'Страница уже существует');
-            return $response->withRedirect("/urls/$id");
+            return $response->withRedirect("/urls/$id", 302);
         }
     }
     $params = [
         'errors' => $errors
     ];
+    $response->withStatus(204);
     return $this->get('renderer')->render($response, 'index.phtml', $params);
 })->setName('post');
 
