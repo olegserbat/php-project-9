@@ -11,19 +11,19 @@ class UrlRepository
         $this->conn = $conn;
     }
 
-    public function getEntities(): array
-    {
-        $urls = [];
-        $sql = "SELECT * FROM urls";
-        $stmt = $this->conn->query($sql);
-
-        while ($row = $stmt->fetch()) {
-            $url = Url::fromArray([$row['address'], $row['created_at']]);
-            $url->setId($row['id']);
-            $urls[] = $url;
-        }
-        return $urls;
-    }
+//    public function getEntities(): array
+//    {
+//        $urls = [];
+//        $sql = "SELECT * FROM urls";
+//        $stmt = $this->conn->query($sql);
+//
+//        while ($row = $stmt->fetch()) {
+//            $url = Url::fromArray([$row['address'], $row['created_at']]);
+//            $url->setId($row['id']);
+//            $urls[] = $url;
+//        }
+//        return $urls;
+//    }
 
     public function find(int $id): mixed
     {

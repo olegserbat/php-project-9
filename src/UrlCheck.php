@@ -10,7 +10,7 @@ class UrlCheck
     private int $urlId;
     private string $h1;
     private string $description;
-    private string $statusCode;
+    private int $statusCode;
     private string $createdAt;
     private string $title;
 
@@ -59,7 +59,7 @@ class UrlCheck
         $this->urlId = $urlId;
     }
 
-    public function setStatuseCod(int $status): void
+    public function setStatuseCod( int $status): void
     {
         $this->statusCode = $status;
     }
