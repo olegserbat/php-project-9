@@ -59,7 +59,7 @@ class UrlCheck
         $this->urlId = $urlId;
     }
 
-    public function setStatuseCod( int $status): void
+    public function setStatuseCod(int $status): void
     {
         $this->statusCode = $status;
     }
