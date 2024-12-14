@@ -7,7 +7,6 @@ use App\UrlRepository;
 use App\Validator;
 use DI\Container;
 use DiDom\Document;
-use DiDom\Element;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
@@ -134,19 +133,19 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         $body = $urlInform->getBody()->getContents();
         $document = new Document($body);
         $description = $document->first("meta[name=description]");
-        if ($description) {
+        if ($description instanceof DiDom\Element) {
             $description = $description->attr('content');
         } else {
             $description = '';
         }
         $title = $document->first('title');
-        if ($title) {
+        if ($title instanceof DiDom\Element) {
             $title = $title->text();
         } else {
             $title = '';
         }
         $h1 = $document->first('h1');
-        if ($h1) {
+        if ($h1 instanceof  DiDom\Element) {
             $h1 = $h1->text();
         } else {
             $h1 = '';
