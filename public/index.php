@@ -7,6 +7,7 @@ use App\UrlRepository;
 use App\Validator;
 use DI\Container;
 use DiDom\Document;
+use DiDom\Element;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
@@ -32,11 +33,13 @@ $container->set(\PDO::class, function () {
 
     if (file_exists('../.env')) {
         $lines = file('../.env');
-        foreach ($lines as $line) {
-            [$key, $value] = explode('=', $line, 2);
-            $key = trim($key);
-            $value = trim($value);
-            $_ENV[$key] = $value;
+        if ($lines) {
+            foreach ($lines as $line) {
+                [$key, $value] = explode('=', $line, 2);
+                $key = trim($key);
+                $value = trim($value);
+                $_ENV[$key] = $value;
+            }
         }
     }
 
