@@ -7,10 +7,9 @@ use App\UrlRepository;
 use App\Validator;
 use DI\Container;
 use DiDom\Document;
+use Dotenv\Dotenv;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ServerException;
 use GuzzleHttp\Exception\TooManyRedirectsException;
 use Slim\Factory\AppFactory;
@@ -31,15 +30,18 @@ $container->set('flash', function () {
 $container->set(\PDO::class, function () {
 
     if (file_exists('../.env')) {
-        $lines = file('../.env');
-        if ($lines) {
-            foreach ($lines as $line) {
-                [$key, $value] = explode('=', $line, 2);
-                $key = trim($key);
-                $value = trim($value);
-                $_ENV[$key] = $value;
-            }
-        }
+        $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+        $dotenv->load();
+        //var_dump($_ENV['DATABASE_URL']); die();
+//        $lines = file('../.env');
+//        if ($lines) {
+//            foreach ($lines as $line) {
+//                [$key, $value] = explode('=', $line, 2);
+//                $key = trim($key);
+//                $value = trim($value);
+//                $_ENV[$key] = $value;
+//            }
+//        }
     }
 
     $databaseUrl = parse_url($_ENV['DATABASE_URL']);
@@ -141,17 +143,17 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
             $title = '';
         }
         $h1 = $document->first('h1');
-        if ($h1 instanceof  DiDom\Element) {
+        if ($h1 instanceof DiDom\Element) {
             $h1 = $h1->text();
         } else {
             $h1 = '';
         }
         $urlChek = new \App\UrlCheck();
         $urlChekData = ['description' => $description,
-                       'h1' => $h1,
-                       'title' => $title,
-                       'status_code' => $statusCod,
-                       'url_id' => $id];
+            'h1' => $h1,
+            'title' => $title,
+            'status_code' => $statusCod,
+            'url_id' => $id];
         $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
@@ -168,19 +170,13 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         $title = "{$statusCod} Temporary Redirect";
         $description = '';
         $urlChekData = ['description' => $description,
-                        'h1' => $h1,
-                        'title' => $title,
-                        'status_code' => $statusCod,
-                        'url_id' => $id];
+            'h1' => $h1,
+            'title' => $title,
+            'status_code' => $statusCod,
+            'url_id' => $id];
         $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
-//    } catch (ConnectException $e) {
-//        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
-//        return $response->withRedirect("/urls/$id");
-//    } catch (RequestException $e) {
-//        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
-//        return $response->withRedirect("/urls/$id");
     } catch (\Throwable $e) {
         $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
         return $response->withRedirect("/urls/$id");
