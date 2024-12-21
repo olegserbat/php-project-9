@@ -61,8 +61,6 @@ $app->add(MethodOverrideMiddleware::class);
 $router = $app->getRouteCollector()->getRouteParser();
 
 $app->get('/', function ($request, $response) {
-
-
     return $this->get('renderer')->render($response, 'index.phtml');
 })->setName('main');
 
@@ -126,8 +124,6 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
     $client = new Client();
     try {
         $urlInform = $client->request('GET', $address, ['allow_redirects' => true, 'http_errors' => true]);
-        //$urlInform = $client->request ( 'GET' ,  $address );
-        //$urlInform = $client->get($address);
         $statusCod = $urlInform->getStatusCode();
         $this->get('flash')->addMessage('success', 'Страница успешно проверена');
         $body = $urlInform->getBody()->getContents();
@@ -179,12 +175,12 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
         $urlChekObject = (new \App\UrlCheck())->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);
-    } catch (ConnectException $e) {
-        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
-        return $response->withRedirect("/urls/$id");
-    } catch (RequestException $e) {
-        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
-        return $response->withRedirect("/urls/$id");
+//    } catch (ConnectException $e) {
+//        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+//        return $response->withRedirect("/urls/$id");
+//    } catch (RequestException $e) {
+//        $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
+//        return $response->withRedirect("/urls/$id");
     } catch (\Throwable $e) {
         $this->get('flash')->addMessage('danger', 'Произошла ошибка при проверке, не удалось подключиться');
         return $response->withRedirect("/urls/$id");
