@@ -32,16 +32,6 @@ $container->set(\PDO::class, function () {
     if (file_exists('../.env')) {
         $dotenv = Dotenv::createImmutable(dirname(__DIR__));
         $dotenv->load();
-        //var_dump($_ENV['DATABASE_URL']); die();
-//        $lines = file('../.env');
-//        if ($lines) {
-//            foreach ($lines as $line) {
-//                [$key, $value] = explode('=', $line, 2);
-//                $key = trim($key);
-//                $value = trim($value);
-//                $_ENV[$key] = $value;
-//            }
-//        }
     }
 
     $databaseUrl = parse_url($_ENV['DATABASE_URL']);
