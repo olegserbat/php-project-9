@@ -33,7 +33,6 @@ $container->set(\PDO::class, function () {
         $dotenv = Dotenv::createImmutable(dirname(__DIR__));
         $dotenv->load();
     }
-
     $databaseUrl = parse_url($_ENV['DATABASE_URL']);
     $username = $databaseUrl['user'];
     $password = $databaseUrl['pass'];
