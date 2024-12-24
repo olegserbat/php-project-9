@@ -16,13 +16,13 @@ class UrlCheckRepository
         $sql = "INSERT INTO url_checks ( url_id, status_code, h1, title, description, created_at) 
                 VALUES ( :url_id, :status_code, :h1, :title, :description, :created_at)";
         $stmt = $this->conn->prepare($sql);
-        $url_id = $url->getUrlId();
+        $urlId = $url->getUrlId();
         $status_code = $url->getStatusCod();
         $h1 = $url->getH1();
         $title = $url->getTitle();
         $description = $url->getDescription();
         $created_at = $url->getCreatedAt();
-        $stmt->bindParam(':url_id', $url_id);
+        $stmt->bindParam(':url_id', $urlId);
         $stmt->bindParam(':status_code', $status_code);
         $stmt->bindParam(':h1', $h1);
         $stmt->bindParam(':title', $title);
@@ -33,11 +33,11 @@ class UrlCheckRepository
         $url->setId($id);
     }
 
-    public function findUrlCheck(int $url_id): mixed
+    public function findUrlCheck(int $urlId): mixed
     {
         $sql = "SELECT * FROM url_checks WHERE url_id = ? ORDER BY created_at DESC ";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(1, $url_id);
+        $stmt->bindParam(1, $urlId);
         $stmt->execute();
         $result = $stmt->fetchAll();
         if ($result !== []) {

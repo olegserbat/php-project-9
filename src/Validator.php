@@ -11,9 +11,8 @@ class Validator
             $errors = 'URL не должен быть пустым';
             return $errors;
         }
-        $patern1 = '/^https:\/\//';
-        $patern2 = '/^http:\/\//';
-        if (!preg_match($patern1, $url['name']) and !preg_match($patern2, $url['name'])) {
+        $patern =  '/^https?:\/\//';
+        if (!preg_match($patern, $url['name'])) {
             $errors = 'Некорректный URL';
         }
         return $errors;

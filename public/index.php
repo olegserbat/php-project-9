@@ -55,7 +55,6 @@ $app->get('/', function ($request, $response) {
     return $this->get('renderer')->render($response, 'index.phtml');
 })->setName('main');
 
-
 $app->post('/urls', function ($request, $response) {
     $url = $request->getParsedBodyParam('url');
     $validUrl = new Validator();
@@ -138,11 +137,13 @@ $app->post('/urls/{url_id}/checks', function ($request, $response, array $args) 
             $h1 = '';
         }
         $urlChek = new \App\UrlCheck();
-        $urlChekData = ['description' => $description,
+        $urlChekData = [
+            'description' => $description,
             'h1' => $h1,
             'title' => $title,
             'status_code' => $statusCod,
-            'url_id' => $id];
+            'url_id' => $id
+        ];
         $urlChekObject = $urlChek->makeUrlCheckObject($urlChekData);
         $repo = $this->get(\App\UrlCheckRepository::class);
         $repo->save($urlChekObject);

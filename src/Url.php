@@ -8,7 +8,7 @@ class Url
 {
     private string $address;
     private int $id;
-    private string $created_at;
+    private string $createdAt;
 
 
     public function getId(): int
@@ -34,7 +34,7 @@ class Url
 
     public function getCreatedAt(): mixed
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     public function setCreatedAt(string $createdAt = null)
@@ -45,7 +45,7 @@ class Url
             $time = Carbon::now();
         }
 
-        $this->created_at = $time->setTimezone('Europe/Moscow');
+        $this->createdAt = $time->setTimezone('Europe/Moscow');
     }
 
     public function fromArray(array $urlData): Url
